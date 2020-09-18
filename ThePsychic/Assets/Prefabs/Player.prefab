@@ -12,8 +12,11 @@ GameObject:
   - component: {fileID: 8513148839428547627}
   - component: {fileID: 8513148839428547622}
   - component: {fileID: 8513148839428547625}
+<<<<<<< HEAD
   - component: {fileID: 2706515493129418285}
   - component: {fileID: 6270081609344833705}
+=======
+>>>>>>> Dev
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -98,6 +101,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14242154, y: 0.14540553}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!114 &2706515493129418285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerTransformContainer: {fileID: 0}
+=======
+>>>>>>> Dev
 --- !u!1 &8513148839767691159
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +178,10 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+<<<<<<< HEAD
+=======
+  m_RayTraceProcedural: 0
+>>>>>>> Dev
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
