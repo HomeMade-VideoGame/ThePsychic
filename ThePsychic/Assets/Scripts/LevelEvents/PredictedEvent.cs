@@ -12,10 +12,11 @@ public class PredictedEvent : MonoBehaviour
     private Vector3 _endPos;
     private bool isActive;
 
-    private void Awake()
+    private void Start()
     {
         transform.position = _playerPos.value.position + _event.minPos;
-        _sprite.sprite = _event.eventSprite;
+        _rigidbody = GetComponent<Rigidbody2D>();
+        //_sprite.sprite = _event.eventSprite;
     }
 
     //Methode appelée depuis Event Manager
