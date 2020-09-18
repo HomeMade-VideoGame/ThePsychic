@@ -9,6 +9,7 @@ public class PredictedEvent : MonoBehaviour
 
     private SpriteRenderer _sprite;
     private Rigidbody2D _rigidbody;
+    private Vector3 _endPos;
     private bool isActive;
 
     private void Awake()
@@ -17,8 +18,10 @@ public class PredictedEvent : MonoBehaviour
         _sprite.sprite = _event.eventSprite;
     }
 
+    //Methode appelée depuis Event Manager
     public void StartEvent()
     {
+        _endPos = _playerPos.value.position + _event.maxPos;
         isActive = true;
     }
 
@@ -26,15 +29,18 @@ public class PredictedEvent : MonoBehaviour
     {
         if (isActive)
         {
+
             Movement();
         }
     }
 
+    //Bouge jusqu'à position finale
     private void Movement()
     {
-        _rigidbody.MovePosition((_playerPos.value.position + _event.maxPos)* _event.speed* Time.fixedDeltaTime);
+        _rigidbody.MovePosition(_endPos* _event.speed* Time.fixedDeltaTime);
     }
 
+    //Tue le joueur si le touche
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
