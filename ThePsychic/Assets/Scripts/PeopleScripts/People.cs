@@ -4,17 +4,18 @@ public class People : MonoBehaviour
 {
     #region Show in Inspector
 
-    [SerializeField] protected SpriteRenderer _theSr;
+    [SerializeField]  SpriteRenderer _theSr;
+    [SerializeField]  Animator _anim;
 
-    [SerializeField] protected float _moveSpeed;
-    [SerializeField] protected Transform pointA, pointB;
+    [SerializeField]  float _moveSpeed;
+    [SerializeField]  Transform pointA, pointB;
 
     #endregion
 
     #region Private
 
-    protected Vector3 _currentTarget;
-    protected Transform _transform;
+    private Vector3 _currentTarget;
+    private Transform _transform;
 
     #endregion
 
@@ -22,24 +23,24 @@ public class People : MonoBehaviour
 
     private void Start()
     {
-        Init();
+        _transform = GetComponent<Transform>();
     }
 
-    public virtual void Update()
+    private void Update()
     {
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            return;
+        }
+
         Movement();
     }
 
     #endregion
 
-    #region Public methods
+    #region Private methods
 
-    public virtual void Init()
-    {
-        _transform = GetComponent<Transform>();
-    }
-
-    public virtual void Movement()
+    private void Movement()
     {
         // Flip Sprite
         if (_currentTarget == pointA.position)
@@ -55,11 +56,13 @@ public class People : MonoBehaviour
         if (_transform.position == pointA.position)
         {
             _currentTarget = pointB.position;
+            _anim.SetTrigger("Idle");
 
         }
         else if (_transform.position == pointB.position)
         {
             _currentTarget = pointA.position;
+            _anim.SetTrigger("Idle");
         }
 
         _transform.position = Vector3.MoveTowards(_transform.position, _currentTarget, _moveSpeed * Time.deltaTime);
