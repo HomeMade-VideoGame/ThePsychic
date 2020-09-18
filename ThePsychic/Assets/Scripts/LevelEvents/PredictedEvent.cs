@@ -26,7 +26,7 @@ public class PredictedEvent : MonoBehaviour
         isActive = true;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (isActive)
         {
@@ -38,7 +38,7 @@ public class PredictedEvent : MonoBehaviour
     //Bouge jusqu'à position finale
     private void Movement()
     {
-        _rigidbody.MovePosition(_endPos* _event.speed* Time.fixedDeltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _endPos, _event.speed * Time.deltaTime);
     }
 
     //Tue le joueur si le touche
