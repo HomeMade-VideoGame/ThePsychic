@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: c51ee1551ec5f444fac23bad05dbaf66
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8906720679527354117
+    second: People A Walk1
+  - first:
+      213: -4329315630239319449
+    second: People A Walk2
+  - first:
+      213: 7224897084215792075
+    second: People A Walk3
+  - first:
+      213: -5597073547378964202
+    second: People A Walk4
+  - first:
+      213: -9204183606270749379
+    second: People A Walk5
+  - first:
+      213: 5500830213153484037
+    second: People A Walk6
+  - first:
+      213: -4941801561217630672
+    second: People A Walk7
+  - first:
+      213: 5436034743097519165
+    second: People A Walk8
+  - first:
+      213: -8266452323703333483
+    second: People B Walk1
+  - first:
+      213: 3513755797133767877
+    second: People B Walk2
+  - first:
+      213: 6037351342114419065
+    second: People B Walk3
+  - first:
+      213: -2051655557523853053
+    second: People B Walk4
+  - first:
+      213: -5603804275603329621
+    second: People B Walk5
+  - first:
+      213: -2430852090850351865
+    second: People B Walk6
+  - first:
+      213: 1880704656382000788
+    second: People B Walk7
+  - first:
+      213: 4723478796915340939
+    second: People B Walk8
+  - first:
+      213: 4226162421998844241
+    second: People C Walk1
+  - first:
+      213: -6623676201360399933
+    second: People C Walk2
+  - first:
+      213: 2490101044277819991
+    second: People C Walk3
+  - first:
+      213: 5873574263783611973
+    second: People C Walk4
+  - first:
+      213: -2050235272595583506
+    second: People C Walk5
+  - first:
+      213: -3669660665461489402
+    second: People C Walk6
+  - first:
+      213: -8161175966010886268
+    second: People C Walk7
+  - first:
+      213: 4958433177314241697
+    second: People C Walk8
+  - first:
+      213: 2333936220172330893
+    second: People Sheet_24
+  - first:
+      213: 3298257961059960966
+    second: People Sheet_25
+  - first:
+      213: 2834431056184815544
+    second: People Sheet_26
+  - first:
+      213: 6911623337770610933
+    second: People Sheet_27
+  - first:
+      213: -1360401680582038862
+    second: People Sheet_28
+  - first:
+      213: -2498682626756562830
+    second: People Sheet_29
+  - first:
+      213: 5379621078690039176
+    second: People Sheet_30
+  - first:
+      213: -7811715281943109992
+    second: People Sheet_31
+  - first:
+      213: -2252795324586840737
+    second: People Sheet_32
+  - first:
+      213: 4623926573511355692
+    second: People Sheet_33
+  - first:
+      213: -1460067345567812118
+    second: People Sheet_34
+  - first:
+      213: -7919547221393949670
+    second: People Sheet_35
+  - first:
+      213: -8395087530350083967
+    second: People Sheet_36
+  - first:
+      213: -617518129176583717
+    second: People Sheet_37
+  - first:
+      213: -4476227536419833471
+    second: People Sheet_38
+  - first:
+      213: 5843673921297678096
+    second: People Sheet_39
+  - first:
+      213: -5744457990132802761
+    second: People Sheet_40
+  - first:
+      213: -7090977170063535038
+    second: People Sheet_41
+  - first:
+      213: -3181874190948019338
+    second: People Sheet_42
+  - first:
+      213: -2636713324991445345
+    second: People Sheet_43
+  - first:
+      213: -8603817236899693431
+    second: People Sheet_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: People A Walk1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 221
+        width: 24
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f8ad8a4470b9b70800000000000000
+      internalID: 8906720679527354117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 220
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76af90b3f5e2be3c0800000000000000
+      internalID: -4329315630239319449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 219
+        width: 22
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc110737e9df34460800000000000000
+      internalID: 7224897084215792075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 220
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619cdb263433352b0800000000000000
+      internalID: -5597073547378964202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 219
+        width: 23
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3512c4a6cb244080800000000000000
+      internalID: -9204183606270749379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 220
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50defb82fefd65c40800000000000000
+      internalID: 5500830213153484037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 219
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ef621b9a13b6bb0800000000000000
+      internalID: -4941801561217630672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People A Walk8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 220
+        width: 22
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c62092ccca07b40800000000000000
+      internalID: 5436034743097519165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 138
+        width: 24
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dd5fcb869a74d80800000000000000
+      internalID: -8266452323703333483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 138
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4b0a3e74e53c030800000000000000
+      internalID: 3513755797133767877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 139
+        width: 22
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97135f2fe0bf8c350800000000000000
+      internalID: 6037351342114419065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 138
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301b55cf32e0783e0800000000000000
+      internalID: -2051655557523853053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 139
+        width: 23
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad29d993b94b32b0800000000000000
+      internalID: -5603804275603329621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 138
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705695f07e0e34ed0800000000000000
+      internalID: -2430852090850351865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 138
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e721babea991a10800000000000000
+      internalID: 1880704656382000788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People B Walk8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 139
+        width: 22
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b867a3290fa2d8140800000000000000
+      internalID: 4723478796915340939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 58
+        width: 24
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1597856e45856aa30800000000000000
+      internalID: 4226162421998844241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 58
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c164bea699f314a0800000000000000
+      internalID: -6623676201360399933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 57
+        width: 22
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a3207e4bd9e8220800000000000000
+      internalID: 2490101044277819991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 58
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ed2b26ca0238150800000000000000
+      internalID: 5873574263783611973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 58
+        width: 23
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedc6f6d1e91c83e0800000000000000
+      internalID: -2050235272595583506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 58
+        width: 23
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601c1f4411fb21dc0800000000000000
+      internalID: -3669660665461489402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk7
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 58
+        width: 22
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487377cd2bdadbe80800000000000000
+      internalID: -8161175966010886268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: People C Walk8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 58
+        width: 22
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aca35034b4efc440800000000000000
+      internalID: 4958433177314241697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
