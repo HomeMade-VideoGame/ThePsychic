@@ -24,7 +24,11 @@ public class Player : MonoBehaviour
     private bool _resetJump;
     private Transform _transform;
 
+    private float _defaultSpeed;
+    private float _crouchSpeed = 0f;
     private float _jumpYpos;
+    private bool _isCrouched;
+    private bool _isDead = false;
 
     #endregion
 
@@ -36,10 +40,18 @@ public class Player : MonoBehaviour
         _transform = GetComponent<Transform>();
     }
 
+    private void Start()
+    {
+        _defaultSpeed = _moveSpeed;
+    }
 
     private void Update()
     {
-        Movement();
+        if (_isDead == false)
+        {
+            Movement();
+        }
+
     }
 
     #endregion
@@ -81,12 +93,24 @@ public class Player : MonoBehaviour
         if (_grounded == false)
         {
             _theRb.gravityScale = 1;
-            _theRb.velocity = new Vector2(_moveInput.x * _moveSpeed, _theRb.velocity.y);
+            _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _theRb.velocity.y);
         }
         else
         {
             _theRb.gravityScale = 0;
-            _theRb.velocity = new Vector2(_moveInput.x * _moveSpeed, _moveInput.y * _moveSpeed);
+            _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _moveInput.y * _defaultSpeed);
+        }
+
+        // Crouch
+        if (Input.GetButton("Crouch"))
+        {
+            _isCrouched = true;
+            _defaultSpeed = _crouchSpeed;
+        }
+        if (Input.GetButtonUp("Crouch"))
+        {
+            _isCrouched = false;
+            _defaultSpeed = _moveSpeed;
         }
     }
 
@@ -123,6 +147,14 @@ public class Player : MonoBehaviour
         get
         {
             return _grounded;
+        }
+    }
+
+    public bool IsCrouched
+    {
+        get
+        {
+            return _isCrouched;
         }
     }
 
