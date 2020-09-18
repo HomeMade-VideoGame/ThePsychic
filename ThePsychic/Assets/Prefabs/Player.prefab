@@ -10,13 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8513148839428547624}
   - component: {fileID: 8513148839428547627}
+  - component: {fileID: 1235713201207045745}
   - component: {fileID: 8513148839428547622}
   - component: {fileID: 8513148839428547625}
-<<<<<<< HEAD
-  - component: {fileID: 2706515493129418285}
-  - component: {fileID: 6270081609344833705}
-=======
->>>>>>> Dev
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -54,6 +50,20 @@ MonoBehaviour:
   _theSr: {fileID: 8513148839767691157}
   _moveSpeed: 3
   _jumpForce: 4
+--- !u!114 &1235713201207045745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513148839428547626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a29bf4d33b9d5143a1e9af4fee4d0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerTransformContainer: {fileID: 11400000, guid: 2af3060a42647984f85dd9ac555ad64e,
+    type: 2}
 --- !u!50 &8513148839428547622
 Rigidbody2D:
   serializedVersion: 4
@@ -101,37 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14242154, y: 0.14540553}
   m_EdgeRadius: 0
-<<<<<<< HEAD
---- !u!114 &2706515493129418285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8513148839428547626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878a1fa416266e24987a477402c48c35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _theSr: {fileID: 0}
-  _moveSpeed: 0
-  _jumpForce: 5
---- !u!114 &6270081609344833705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8513148839428547626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a29bf4d33b9d5143a1e9af4fee4d0e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerTransformContainer: {fileID: 0}
-=======
->>>>>>> Dev
 --- !u!1 &8513148839767691159
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,10 +157,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-<<<<<<< HEAD
-=======
-  m_RayTraceProcedural: 0
->>>>>>> Dev
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
