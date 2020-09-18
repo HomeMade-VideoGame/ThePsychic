@@ -186,17 +186,38 @@ PrefabInstance:
     - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8513148839428547626, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8513148839428547627, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
+        type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 735948915}
+    - target: {fileID: 8513148839428547627, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
+        type: 3}
+      propertyPath: _moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c1d5400ae1f9604b8d04be42c7f623a, type: 3}
+--- !u!95 &735948915 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 735948915, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
+    type: 3}
+  m_PrefabInstance: {fileID: 735948913}
+  m_PrefabAsset: {fileID: 0}
