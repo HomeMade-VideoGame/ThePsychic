@@ -11,12 +11,13 @@ public class PredictedEvent : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private bool isActive;
 
-    private void Awake()
+    private void Start()
     {
         transform.position = _playerPos.value.position + _event.minPos;
         _sprite.sprite = _event.eventSprite;
     }
 
+    //Start event from Event Manager
     public void StartEvent()
     {
         isActive = true;
@@ -30,11 +31,13 @@ public class PredictedEvent : MonoBehaviour
         }
     }
 
+    //Move the event
     private void Movement()
     {
         _rigidbody.MovePosition((_playerPos.value.position + _event.maxPos)* _event.speed* Time.fixedDeltaTime);
     }
 
+    //Kill the player on touch
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
