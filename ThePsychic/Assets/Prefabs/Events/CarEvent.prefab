@@ -78,7 +78,7 @@ SpriteRenderer:
   m_Size: {x: 0.96, y: 0.96}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4605302707138984431
@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -180.77502, y: 125.642395}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -154,7 +154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.6998658, y: 3.4318836}
+  m_Size: {x: 149.25507, y: 254.71674}
   m_EdgeRadius: 0
 --- !u!1 &5961191348424928464
 GameObject:
@@ -166,7 +166,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2195580600597153025}
   - component: {fileID: 1253877321}
-  - component: {fileID: 414763721786399325}
+  - component: {fileID: 1732247311}
+  - component: {fileID: 1732247312}
   m_Layer: 0
   m_Name: Disable
   m_TagString: Untagged
@@ -202,9 +203,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 0}
   _voyanteSprite: {fileID: 0}
-  _keyCode: 2
-  _interract: {fileID: 414763721786399325}
---- !u!114 &414763721786399325
+  _keyCode: 0
+--- !u!61 &1732247311
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961191348424928464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 289.9479, y: 164.39188}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 269.83118, y: 129.08234}
+  m_EdgeRadius: 0
+--- !u!114 &1732247312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,14 +239,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5961191348424928464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
+  m_Script: {fileID: 11500000, guid: bdde835bbd39b9a4480532f33acc43f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _notification: {fileID: 0}
-  _usedWrench: 0
-  _usedFlower: 0
-  _usedUmbrella: 0
+  _anim: {fileID: 0}
+  _voyanteSprite: {fileID: 0}
+  _keyCode: 0
+  _waitTime: 5
 --- !u!1 &6673376988072131222
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4495348896912847831}
   - component: {fileID: 6631551807128061529}
+  - component: {fileID: 642455940}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -272,3 +298,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &642455940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673376988072131222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76dbeb9e8e5e1048a0722bea3841dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anim: {fileID: 642455940}
+  _voyanteSprite: {fileID: 0}
+  _eventSound: {fileID: 0}

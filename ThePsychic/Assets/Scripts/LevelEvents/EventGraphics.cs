@@ -11,11 +11,12 @@ public class EventGraphics : PredictedEvent
     public void Start()
     {
         _anim = GetComponent<Animator>();
+        _audio = GetComponent<AudioSource>();
     }
 
     public void AnimateDeath()
     {
-        _anim.SetTrigger("Death");
+        _anim.SetTrigger("Death");       
     }
 
     public void AnimateDefuse()
