@@ -10,6 +10,8 @@ public class People : MonoBehaviour
     [SerializeField]  float _moveSpeed;
     [SerializeField]  Transform pointA, pointB;
 
+
+
     #endregion
 
     #region Private
@@ -28,12 +30,16 @@ public class People : MonoBehaviour
 
     private void Update()
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        if (LevelManager.instance._isPaused == false)
         {
-            return;
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            {
+                return;
+            }
+
+            Movement();
         }
 
-        Movement();
     }
 
     #endregion
