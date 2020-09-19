@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventGraphics : PredictedEvent
+public class EventGraphics : MonoBehaviour
 {
     [SerializeField] AudioClip _eventSound;
     private Animator _anim;
@@ -16,12 +16,12 @@ public class EventGraphics : PredictedEvent
 
     public void AnimateDeath()
     {
-        _anim.SetTrigger("Death");       
+        //_anim.SetTrigger("Death");       
     }
 
     public void AnimateDefuse()
     {
-        _anim.SetTrigger("Disabled");
+        //_anim.SetTrigger("Disabled");
     }
 
 
