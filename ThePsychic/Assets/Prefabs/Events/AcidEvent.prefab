@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boutonData: {fileID: 0}
   _player: {fileID: 0}
   _notification: {fileID: 0}
   _usedWrench: 0

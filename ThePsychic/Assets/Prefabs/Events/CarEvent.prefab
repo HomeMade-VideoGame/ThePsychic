@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988dd9cfc4f80c4ea78707c246f1662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _voyanteSprite: {fileID: -3741282385856370446, guid: 01626d0010f80bb4fa4d701e39270563,
+  _anim: {fileID: 0}
+  _voyanteSprite: {fileID: -1510410659438319286, guid: 01626d0010f80bb4fa4d701e39270563,
     type: 3}
 --- !u!61 &3284657506166830909
 BoxCollider2D:
@@ -118,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c74cbd90a4fc03418b66a79286a3403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _anim: {fileID: 0}
   _voyanteSprite: {fileID: 0}
   _keyCode: 2
   _interract: {fileID: 414763721786399325}
@@ -133,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boutonData: {fileID: 0}
   _player: {fileID: 0}
   _notification: {fileID: 0}
   _usedWrench: 0
