@@ -492,7 +492,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 0.84
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -516,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.772, y: 0.668, z: -2}
+  m_LocalPosition: {x: -0.9999998, y: 0, z: -2}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1103857750}
@@ -671,9 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bda0e932aea252449fa61dfb93bfbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _boutonDataReceiver: {fileID: 11400000, guid: 13fb2e8bffd6cf4429338a97f3b946a2,
-    type: 2}
-  _utilisationItem: {fileID: 0}
 --- !u!4 &728132662
 Transform:
   m_ObjectHideFlags: 0
@@ -1611,11 +1608,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eventArray:
   - {fileID: 4605302707138984430, guid: 71f2fd55bc29f4e46b69fedb89c82844, type: 3}
-  - {fileID: 4605302707138984430, guid: 9207893db352bab498daa24fff2a3e37, type: 3}
-  - {fileID: 4605302707138984430, guid: b5c14f9945dca7e4587d9797415b6b08, type: 3}
-  - {fileID: 4605302707138984430, guid: 7949e12107973534bab1bf3b3b2aca61, type: 3}
-  - {fileID: 4605302707138984430, guid: 68c1f9d0e921c254f88efca72f04f089, type: 3}
-  - {fileID: 4605302707138984430, guid: ecfcafb45fb20824dbf81381fbdc56dc, type: 3}
+  - {fileID: 4605302707138984430, guid: 6868ba7c1eda2e840bbd883fe6ec55f9, type: 3}
+  - {fileID: 4605302707138984430, guid: 86d4a1f390e32044080004bee09dfb29, type: 3}
+  - {fileID: 4605302707138984430, guid: 612b638105e5cd54db7ad1641a44ffef, type: 3}
+  - {fileID: 4605302707138984430, guid: a49be7a4e61bcb94992f2bfe571fb9f4, type: 3}
+  - {fileID: 4605302707138984430, guid: e30868f43d4b0574ca18dc0c035be6dc, type: 3}
   _predictionSpriteRenderer: {fileID: 470306241}
   _spriteSwitchTime: 2
 --- !u!4 &1983787290

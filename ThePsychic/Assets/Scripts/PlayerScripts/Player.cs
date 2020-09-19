@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (_isDead == false && LevelManager.instance._isPaused == false)
+        if (_isDead == false && LevelManager.instance._isPaused == false && _theSr.isVisible)
         {
             Movement();
         }

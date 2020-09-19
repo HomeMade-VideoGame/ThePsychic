@@ -11,6 +11,8 @@ public class RandomEvent : MonoBehaviour
 
     private Sprite[] _selectedSpriteArray = new Sprite[3];
 
+    private bool _isReady;
+
 
     private void SelectEvent()
     {
@@ -18,11 +20,20 @@ public class RandomEvent : MonoBehaviour
 
         for (int i = 0; i<=2; i++)
         {
-
             int x = Random.Range(0, _eventArray.Length);
-            _selectedEventArray[j] = _eventArray[x];
-            j++;
-            _eventArray[x] = null;
+
+            if (_eventArray[x] != null)
+            {
+                _selectedEventArray[j] = _eventArray[x];
+
+                j++;
+                _eventArray[x] = null;
+            }
+
+            else
+            {
+                i--;
+            }
         }
     }
 
@@ -46,11 +57,14 @@ public class RandomEvent : MonoBehaviour
 
     IEnumerator SelectedSpriteSwitch()
     {
-        foreach(Sprite danger in _selectedSpriteArray)
-        {         
-            _predictionSpriteRenderer.sprite = danger;
+        while (!_isReady)
+        {
+            foreach (Sprite danger in _selectedSpriteArray)
+            {
+                _predictionSpriteRenderer.sprite = danger;
 
-            yield return new WaitForSeconds(_spriteSwitchTime);
+                yield return new WaitForSeconds(_spriteSwitchTime);
+            }
         }
 
         _predictionSpriteRenderer.gameObject.SetActive(false);
