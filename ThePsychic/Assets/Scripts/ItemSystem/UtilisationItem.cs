@@ -6,7 +6,6 @@ public class UtilisationItem : MonoBehaviour
 {
     #region Show in Inspector
 
-    [SerializeField] BoutonData _boutonData;
     [SerializeField] Player _player;
     [SerializeField] GameObject _notification;
 
@@ -24,10 +23,6 @@ public class UtilisationItem : MonoBehaviour
 
     #region Unity Lifecycle
 
-    private void Start()
-    {
-        _boutonData.value = GetComponent<UtilisationItem>();
-    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _canInterract && _player._hasAnyItem)
