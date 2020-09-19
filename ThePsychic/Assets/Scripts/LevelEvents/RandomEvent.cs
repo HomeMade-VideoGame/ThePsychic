@@ -18,10 +18,11 @@ public class RandomEvent : MonoBehaviour
 
         for (int i = 0; i<=2; i++)
         {
+
             int x = Random.Range(0, _eventArray.Length);
             _selectedEventArray[j] = _eventArray[x];
             j++;
-
+            _eventArray[x] = null;
         }
     }
 
