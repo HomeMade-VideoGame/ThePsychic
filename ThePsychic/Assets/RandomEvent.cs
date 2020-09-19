@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class RandomEvent : MonoBehaviour
 {
     [SerializeField] private PredictedEvent[] _eventArray = new PredictedEvent[6];
     [SerializeField] private SpriteRenderer _predictionSpriteRenderer;
+    [SerializeField] private float _spriteSwitchTime;
 
     private PredictedEvent[] _selectedEventArray = new PredictedEvent[3];
 
@@ -28,6 +30,7 @@ public class RandomEvent : MonoBehaviour
         foreach (PredictedEvent danger in _selectedEventArray)
         {
             
+            StartCoroutine(SelectedSpriteSwitch());
         }
     }
 
@@ -37,8 +40,13 @@ public class RandomEvent : MonoBehaviour
         {
             SelectEvent();
         }
+    }
 
-
+    IEnumerator SelectedSpriteSwitch()
+    {
+        yield return new WaitForSeconds(_spriteSwitchTime);
+        int s = 0;
+        _predictionSpriteRenderer.sprite = _selectedSpriteArray[s];
     }
 
     private void SpawnEvent()
