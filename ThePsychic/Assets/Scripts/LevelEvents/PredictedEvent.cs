@@ -4,21 +4,15 @@ using UnityEngine;
 
 public class PredictedEvent : MonoBehaviour
 {
-    public Sprite _voyanteSprite;
+    [SerializeField] EventGraphics _anim;
 
-    private bool isActive = true;
+    public Sprite _voyanteSprite;
     private bool isTriggered;
 
-
     public Sprite VoyanteSprite()
+
     {
         return _voyanteSprite;
-    }
-
-    public bool IsActive(bool status)
-    {
-        isActive = status;
-        return isActive;
     }
 
     private void Start()
@@ -26,39 +20,29 @@ public class PredictedEvent : MonoBehaviour
 
     }
 
-    //Methode appelée depuis Event Manager
-    public void StartEvent()
-    {
-        isTriggered = true;
-    }
-
     private void Update()
     {
         if (isTriggered)
         {
-
-        }
-        else if (!isActive)
-        {
-
+            _anim.AnimateDeath();
         }
     }
 
-  
-    //Tue le joueur si le touche
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isTriggered = true;
             Debug.Log("Triggered the event");
+            collision.gameObject.GetComponent<Player>().IsDead(true);
         }
     }
 
     public virtual void Disarm()
     {
         Debug.Log("Event disarmed");
-        IsActive(false);
+        isTriggered = false;
+        _anim.AnimateDefuse();
     }
 
     

@@ -37,7 +37,6 @@ public class UtilisationItem : MonoBehaviour
             LevelManager.instance._isPaused = true;
         }
 
-
     }
 
     #endregion

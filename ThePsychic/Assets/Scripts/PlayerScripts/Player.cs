@@ -132,7 +132,11 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Public methods
-
+    public bool IsDead(bool status)
+    {
+        _isDead = status;
+        return _isDead;
+    }
     #endregion
 
     #region Public properties
