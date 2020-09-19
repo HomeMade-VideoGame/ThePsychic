@@ -27,11 +27,10 @@ public class RandomEvent : MonoBehaviour
 
     private void SetSelectedEvent()
     {
-        foreach (PredictedEvent danger in _selectedEventArray)
-        {
-            danger.VoyanteSprite();
-            StartCoroutine(SelectedSpriteSwitch());
-        }
+         for (int z = 0; z <= _selectedEventArray.Length - 1; z++)
+         {
+             _selectedSpriteArray[z] = _selectedEventArray[z].VoyanteSprite();
+         }
     }
 
     private void Update()
@@ -39,14 +38,18 @@ public class RandomEvent : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             SelectEvent();
+            SetSelectedEvent();
         }
     }
 
     IEnumerator SelectedSpriteSwitch()
     {
-        yield return new WaitForSeconds(_spriteSwitchTime);
-        int s = 0;
-        _predictionSpriteRenderer.sprite = _selectedSpriteArray[s];
+        foreach(Sprite danger in _selectedSpriteArray)
+        {
+            yield return new WaitForSeconds(_spriteSwitchTime);
+
+            _predictionSpriteRenderer.sprite = danger;
+        }
     }
 
     private void SpawnEvent()
