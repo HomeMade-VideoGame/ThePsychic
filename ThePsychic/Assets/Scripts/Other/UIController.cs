@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
     private Player _player;
 
     [HideInInspector]
-    public bool _usedWrench, _usedFlower, _usedUmbrella;
+    public int _itemCode = 0;
 
     #endregion
 
@@ -38,7 +38,7 @@ public class UIController : MonoBehaviour
             Debug.Log("used wrench");
             LevelManager.instance._isPaused = false;
             UIController.instance._wrenchImage.enabled = false;
-            _usedWrench = true;
+            _itemCode = 1;
 
         }
     }
@@ -50,7 +50,7 @@ public class UIController : MonoBehaviour
             LevelManager.instance._isPaused = false;
             Debug.Log("used flower");
             UIController.instance._flowerImage.enabled = false;
-            _usedFlower = true;
+            _itemCode = 2;
 
         }
     }
@@ -61,7 +61,7 @@ public class UIController : MonoBehaviour
         {
             Debug.Log("used umbrella");
             UIController.instance._umbrellaImage.enabled = false;
-            _usedUmbrella = true;
+            _itemCode = 3;
             LevelManager.instance._isPaused = false;
         }
     }

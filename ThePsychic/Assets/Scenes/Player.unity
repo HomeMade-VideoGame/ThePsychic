@@ -1010,11 +1010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 762686415}
-  _notification: {fileID: 1946927364}
-  _usedWrench: 0
-  _usedFlower: 0
-  _usedUmbrella: 0
 --- !u!4 &1137767601
 Transform:
   m_ObjectHideFlags: 0

@@ -8,7 +8,6 @@ public class EventDefuser : PredictedEvent
     [Tooltip("0 = None, 1 = Wrench, 2 = Flower, 3  Umbrella")]
     [Range(0,3)]
     [SerializeField] int _keyCode = 0;
-    [SerializeField] UtilisationItem _interract;
 
     private bool needsItem;
 
@@ -25,8 +24,12 @@ public class EventDefuser : PredictedEvent
     {
         if (needsItem)
         {
-
+            if (UIController.instance._itemCode == _keyCode)
+            {
+                Disarm();
+            }
         }
+        else return;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
