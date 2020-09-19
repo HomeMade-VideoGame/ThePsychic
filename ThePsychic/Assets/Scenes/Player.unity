@@ -1457,7 +1457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1946927365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946927364}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1835,16 +1835,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 11944446}
     m_Modifications:
-    - target: {fileID: 6655280564511264528, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655280564511264528, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseWrenchReceiver
-      objectReference: {fileID: 0}
     - target: {fileID: 6655280565350517730, guid: 5140b487a93a1034fa2da48183261ebb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1954,26 +1944,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655280565399792502, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655280565399792502, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseUmbrellaReceiver
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655280565964971169, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655280565964971169, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseFlowerReceiver
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5140b487a93a1034fa2da48183261ebb, type: 3}
