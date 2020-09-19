@@ -8,17 +8,17 @@ public class EventGraphics : PredictedEvent
     private Animator _anim;
     private AudioSource _audio;
 
-    private void Start()
+    public void Start()
     {
         _anim = GetComponent<Animator>();
     }
 
-    private void AnimateDeath()
+    public void AnimateDeath()
     {
         _anim.SetTrigger("Death");
     }
 
-    private void AnimateDefuse()
+    public void AnimateDefuse()
     {
         _anim.SetTrigger("Disabled");
     }
