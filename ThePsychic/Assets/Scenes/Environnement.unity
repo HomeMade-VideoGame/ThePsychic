@@ -313,6 +313,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 10.131597
       objectReference: {fileID: 0}
+    - target: {fileID: 3284657506166830909, guid: b1d2c8474afbbe5459285d270bf0b762,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4605302707138984424, guid: b1d2c8474afbbe5459285d270bf0b762,
         type: 3}
       propertyPath: m_GravityScale
