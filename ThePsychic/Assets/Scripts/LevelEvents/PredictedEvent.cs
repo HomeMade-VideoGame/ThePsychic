@@ -4,41 +4,64 @@ using UnityEngine;
 
 public class PredictedEvent : MonoBehaviour
 {
-    [SerializeField] EventScriptableObject _event;
     [SerializeField] TransformData _playerPos;
 
+    public Sprite _voyanteSprite;
+
+    private TriggerSystem _trigger;
     private SpriteRenderer _sprite;
-    private Rigidbody2D _rigidbody;
-    private Vector3 _endPos;
-    private bool isActive;
+    private Animator _anim;
+    private bool isActive = true;
+    private bool isTriggered;
+    //private Rigidbody2D _rigidbody;
+    //private Vector3 _endPos;
+
+    public Sprite VoyanteSprite()
+    {
+        return _voyanteSprite;
+    }
+
+    private bool IsActive(bool status)
+    {
+        isActive = status;
+        return isActive;
+    }
 
     private void Start()
     {
-        transform.position = _playerPos.value.position + _event.minPos;
-        _rigidbody = GetComponent<Rigidbody2D>();
+        //transform.position 
+        //_rigidbody = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
         //_sprite.sprite = _event.eventSprite;
     }
 
     //Methode appelée depuis Event Manager
     public void StartEvent()
     {
-        _endPos = _playerPos.value.position + _event.maxPos;
-        isActive = true;
+        isTriggered = true;
     }
 
     private void Update()
     {
-        if (isActive)
+        if (isTriggered)
         {
-
-            Movement();
+            //StopPlayer();
+        }
+        else if (!isActive)
+        {
+            DisableAnimation();
         }
     }
 
-    //Bouge jusqu'à position finale
-    private void Movement()
+    //Déclenche une animation de mort
+    private void DeathAnimation()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _endPos, _event.speed * Time.deltaTime);
+        _anim.SetTrigger("Death");
+    }
+
+    private void DisableAnimation()
+    {
+        _anim.SetTrigger("Disabled");
     }
 
     //Tue le joueur si le touche
@@ -46,9 +69,18 @@ public class PredictedEvent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.GetComponent<Death>()
+            Debug.Log("Triggered the event");
+            DeathAnimation();
         }
     }
+
+    public void Disarm()
+    {
+        Debug.Log("Event disarmed");
+        IsActive(false);
+    }
+
+    
 
 
 }

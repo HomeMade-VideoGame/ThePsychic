@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(EdgeCollider2D))]
+
 
 public class TriggerSystem : MonoBehaviour
 {
     [SerializeField] float _minWaitTime, _maxWaitTime;
-    [SerializeField] PredictedEvent _event;
+    [SerializeField] PredictedEvent _event; //Assigné au début
 
     private bool _eventActive;
 
@@ -26,8 +26,8 @@ public class TriggerSystem : MonoBehaviour
         {
             Debug.Log("Event Triggered !");
             _event.StartEvent();
-            _eventActive = false;
         }
+        else Debug.LogError("Event is missing from Trigger");
     }
 
     IEnumerator WaitForEvent()
