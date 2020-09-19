@@ -5,16 +5,17 @@ using UnityEngine;
 public class PredictedEvent : MonoBehaviour
 {
     [SerializeField] TransformData _playerPos;
+    [SerializeField] AudioClip _eventSound;
 
     public Sprite _voyanteSprite;
 
     private TriggerSystem _trigger;
     private SpriteRenderer _sprite;
     private Animator _anim;
+    private AudioSource _audio;
     private bool isActive = true;
     private bool isTriggered;
-    //private Rigidbody2D _rigidbody;
-    //private Vector3 _endPos;
+
 
     public Sprite VoyanteSprite()
     {
@@ -29,10 +30,7 @@ public class PredictedEvent : MonoBehaviour
 
     private void Start()
     {
-        //transform.position 
-        //_rigidbody = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
-        //_sprite.sprite = _event.eventSprite;
     }
 
     //Methode appelée depuis Event Manager
@@ -69,6 +67,7 @@ public class PredictedEvent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            isTriggered = true;
             Debug.Log("Triggered the event");
             DeathAnimation();
         }

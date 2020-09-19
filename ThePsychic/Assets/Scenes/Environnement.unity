@@ -151,8 +151,9 @@ Transform:
   m_Children:
   - {fileID: 1623081460}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &411867211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,6 +187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988dd9cfc4f80c4ea78707c246f1662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1623081459
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +271,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!1 &1988055127
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +399,8 @@ Transform:
   m_Father: {fileID: 1623081460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &4605302708384634565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -465,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 4605302707138984425, guid: b1d2c8474afbbe5459285d270bf0b762,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4605302707138984425, guid: b1d2c8474afbbe5459285d270bf0b762,
         type: 3}

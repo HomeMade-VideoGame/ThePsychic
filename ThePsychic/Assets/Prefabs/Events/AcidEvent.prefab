@@ -47,7 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPos: {fileID: 11400000, guid: 2af3060a42647984f85dd9ac555ad64e, type: 2}
-  _voyanteSprite: {fileID: 0}
+  _eventSound: {fileID: 0}
+  _voyanteSprite: {fileID: -3741282385856370446, guid: 01626d0010f80bb4fa4d701e39270563,
+    type: 3}
 --- !u!61 &3284657506166830909
 BoxCollider2D:
   m_ObjectHideFlags: 0
