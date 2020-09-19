@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] float _moveSpeed;
     [SerializeField] private float _jumpForce = 5f;
 
+    public bool _hasWrench, _hasFlower, _hasUmbrella, _hasAnyItem;
 
     #endregion
 
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (_isDead == false)
+        if (_isDead == false && LevelManager.instance._isPaused == false)
         {
             Movement();
         }
@@ -130,7 +131,9 @@ public class Player : MonoBehaviour
 
     #endregion
 
+    #region Public methods
 
+    #endregion
 
     #region Public properties
 
