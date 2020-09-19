@@ -39,17 +39,20 @@ public class RandomEvent : MonoBehaviour
         {
             SelectEvent();
             SetSelectedEvent();
+            StartCoroutine(SelectedSpriteSwitch());
         }
     }
 
     IEnumerator SelectedSpriteSwitch()
     {
         foreach(Sprite danger in _selectedSpriteArray)
-        {
-            yield return new WaitForSeconds(_spriteSwitchTime);
-
+        {         
             _predictionSpriteRenderer.sprite = danger;
+
+            yield return new WaitForSeconds(_spriteSwitchTime);
         }
+
+        _predictionSpriteRenderer.gameObject.SetActive(false);
     }
 
     private void SpawnEvent()
