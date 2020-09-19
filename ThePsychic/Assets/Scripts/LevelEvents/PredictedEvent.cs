@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class PredictedEvent : MonoBehaviour
 {
-    [SerializeField] TransformData _playerPos;
-    [SerializeField] AudioClip _eventSound;
-
     public Sprite _voyanteSprite;
 
-    private TriggerSystem _trigger;
-    private SpriteRenderer _sprite;
-    private Animator _anim;
-    private AudioSource _audio;
     private bool isActive = true;
     private bool isTriggered;
 
@@ -22,7 +15,7 @@ public class PredictedEvent : MonoBehaviour
         return _voyanteSprite;
     }
 
-    private bool IsActive(bool status)
+    public bool IsActive(bool status)
     {
         isActive = status;
         return isActive;
@@ -30,7 +23,7 @@ public class PredictedEvent : MonoBehaviour
 
     private void Start()
     {
-        _anim = GetComponent<Animator>();
+
     }
 
     //Methode appelée depuis Event Manager
@@ -43,25 +36,15 @@ public class PredictedEvent : MonoBehaviour
     {
         if (isTriggered)
         {
-            //StopPlayer();
+
         }
         else if (!isActive)
         {
-            DisableAnimation();
+
         }
     }
 
-    //Déclenche une animation de mort
-    private void DeathAnimation()
-    {
-        _anim.SetTrigger("Death");
-    }
-
-    private void DisableAnimation()
-    {
-        _anim.SetTrigger("Disabled");
-    }
-
+  
     //Tue le joueur si le touche
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -69,11 +52,10 @@ public class PredictedEvent : MonoBehaviour
         {
             isTriggered = true;
             Debug.Log("Triggered the event");
-            DeathAnimation();
         }
     }
 
-    public void Disarm()
+    public virtual void Disarm()
     {
         Debug.Log("Event disarmed");
         IsActive(false);

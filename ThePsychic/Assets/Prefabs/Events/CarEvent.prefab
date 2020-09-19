@@ -46,9 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988dd9cfc4f80c4ea78707c246f1662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPos: {fileID: 11400000, guid: 2af3060a42647984f85dd9ac555ad64e, type: 2}
-  _eventSound: {fileID: 0}
-  _voyanteSprite: {fileID: -1510410659438319286, guid: 01626d0010f80bb4fa4d701e39270563,
+  _voyanteSprite: {fileID: -3741282385856370446, guid: 01626d0010f80bb4fa4d701e39270563,
     type: 3}
 --- !u!61 &3284657506166830909
 BoxCollider2D:
@@ -85,6 +83,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2195580600597153025}
+  - component: {fileID: 1253877321}
+  - component: {fileID: 414763721786399325}
   m_Layer: 0
   m_Name: Disable
   m_TagString: Untagged
@@ -106,6 +106,39 @@ Transform:
   m_Father: {fileID: 4605302707138984425}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253877321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961191348424928464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c74cbd90a4fc03418b66a79286a3403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _voyanteSprite: {fileID: 0}
+  _keyCode: 2
+  _interract: {fileID: 414763721786399325}
+--- !u!114 &414763721786399325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961191348424928464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boutonData: {fileID: 0}
+  _player: {fileID: 0}
+  _notification: {fileID: 0}
+  _usedWrench: 0
+  _usedFlower: 0
+  _usedUmbrella: 0
 --- !u!1 &6673376988072131222
 GameObject:
   m_ObjectHideFlags: 0
