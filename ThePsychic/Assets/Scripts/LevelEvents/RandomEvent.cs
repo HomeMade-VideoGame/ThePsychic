@@ -21,7 +21,7 @@ public class RandomEvent : MonoBehaviour
             int x = Random.Range(0, _eventArray.Length);
             _selectedEventArray[j] = _eventArray[x];
             j++;
-            Debug.Log(j + "j event chargé");
+
         }
     }
 
