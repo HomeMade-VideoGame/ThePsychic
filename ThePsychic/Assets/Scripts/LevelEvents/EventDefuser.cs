@@ -32,11 +32,6 @@ public class EventDefuser : PredictedEvent
         else return;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
-
     public override void Disarm()
     {
         base.Disarm();

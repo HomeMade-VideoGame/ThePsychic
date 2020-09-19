@@ -7,6 +7,7 @@ public class PredictedEvent : MonoBehaviour
     [SerializeField] EventGraphics _anim;
 
     public Sprite _voyanteSprite;
+
     private bool isTriggered;
 
     public Sprite VoyanteSprite()
@@ -24,7 +25,7 @@ public class PredictedEvent : MonoBehaviour
     {
         if (isTriggered)
         {
-            _anim.AnimateDeath();
+            //_anim.AnimateDeath();
         }
     }
 
@@ -42,7 +43,7 @@ public class PredictedEvent : MonoBehaviour
     {
         Debug.Log("Event disarmed");
         isTriggered = false;
-        _anim.AnimateDefuse();
+        //_anim.AnimateDefuse();
     }
 
     
