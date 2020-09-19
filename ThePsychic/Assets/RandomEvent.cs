@@ -29,7 +29,7 @@ public class RandomEvent : MonoBehaviour
     {
         foreach (PredictedEvent danger in _selectedEventArray)
         {
-            
+            danger.VoyanteSprite();
             StartCoroutine(SelectedSpriteSwitch());
         }
     }
