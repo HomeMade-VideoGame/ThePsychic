@@ -35,10 +35,10 @@ public class PredictedEvent : MonoBehaviour
         Debug.Log("can be triggered = " + _canBeTriggered);
         Debug.Log("is triggered = " + isTriggered);
 
-        //if (isTriggered)
-        //{
-        //    _graphics.AnimateDeath();
-        //}
+        if (isTriggered)
+        {
+            _graphics.AnimateDeath();
+        }
         //else if (isDisabled)
         //{
         //    DisableEvent();
@@ -63,9 +63,7 @@ public class PredictedEvent : MonoBehaviour
         _canBeTriggered = false;
         Debug.Log("Event disarmed");
         _triggerCol.enabled = false;
-
-
-        //_graphics.AnimateDefuse(); 
+        _graphics.AnimateDefuse(); 
     }
 
 

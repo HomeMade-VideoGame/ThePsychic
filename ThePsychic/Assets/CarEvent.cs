@@ -26,24 +26,6 @@ public class CarEvent : MonoBehaviour
         _waitForGreenLight = WaitForGreenLight();
     }
 
-    //private void Start()
-    //{
-    //    _countToRed = 1f;
-    //}
-
-    //private void Update()
-    //{
-    //    if (_goingRed)
-    //    {
-    //        _countToRed -= Time.deltaTime;
-    //        if (_countToRed <= 0)
-    //        {
-    //            _voitureRouge.enabled = true;
-    //            _pietonVert.enabled = true;
-    //        }
-    //    }
-    //}
-
     #region Private methods
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,12 +44,6 @@ public class CarEvent : MonoBehaviour
         }
     }
 
-    //private void TurningGreen()
-    //{
-    //    _voitureOrange.enabled = true;
-    //    _goingRed = true;
-    //}
-
     #endregion
 
     #region Coroutine
@@ -78,7 +54,6 @@ public class CarEvent : MonoBehaviour
         _predictedEvent.DisableEvent();
         _animVoiture.SetTrigger("PasseRouge");
         _animPieton.SetTrigger("PasseVert");
-        //TurningGreen();
     }
 
     #endregion
