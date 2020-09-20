@@ -32,10 +32,7 @@ public class PredictedEvent : MonoBehaviour
         {
             _graphics.AnimateDeath();
         }
-        //else if (isDisabled)
-        //{
-        //    DisableEvent();
-        //}
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +53,7 @@ public class PredictedEvent : MonoBehaviour
         DestroyImmediate(_triggerCol);
         Debug.Log("Event disarmed");
         isTriggered = false;
-        //_graphics.AnimateDefuse(); 
+        _graphics.AnimateDefuse(); 
     }
 
     public void Disarm()

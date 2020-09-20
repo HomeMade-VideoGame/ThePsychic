@@ -16,12 +16,12 @@ public class EventGraphics : MonoBehaviour
 
     public void AnimateDeath()
     {
-        //_anim.SetTrigger("Death");       
+        _anim.SetTrigger("Death");       
     }
 
     public void AnimateDefuse()
     {
-        //_anim.SetTrigger("Disabled");
+        _anim.SetTrigger("Disabled");
     }
 
 
