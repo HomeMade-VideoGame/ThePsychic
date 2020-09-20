@@ -10,6 +10,7 @@ public class PredictedEvent : MonoBehaviour
     private bool isTriggered;
     private bool isDisabled;
     private EventGraphics _graphics;
+    private bool _canBeTriggered;
 
     public Sprite VoyanteSprite()
 
@@ -17,6 +18,10 @@ public class PredictedEvent : MonoBehaviour
         return _voyanteSprite;
     }
 
+    private void Awake()
+    {
+        _canBeTriggered = true;
+    }
     private void Start()
     {
         _graphics = GetComponentInChildren<EventGraphics>();
@@ -27,41 +32,41 @@ public class PredictedEvent : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(_triggerCol);
-        if (isTriggered)
-        {
-            _graphics.AnimateDeath();
-        }
+        Debug.Log("can be triggered = " + _canBeTriggered);
+        Debug.Log("is triggered = " + isTriggered);
 
+        //if (isTriggered)
+        //{
+        //    _graphics.AnimateDeath();
+        //}
+        //else if (isDisabled)
+        //{
+        //    DisableEvent();
+        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (!isTriggered)
+            if (!isTriggered && _canBeTriggered == true)
             {
-                isTriggered = true;
                 Debug.Log("Triggered the event");
+                isTriggered = true;
                 collision.gameObject.GetComponent<Player>().IsDead(true);
             }
         }
     }
 
-    private void DisableEvent()
+    public void DisableEvent()
     {
-        DestroyImmediate(_triggerCol);
+        _canBeTriggered = false;
         Debug.Log("Event disarmed");
-        isTriggered = false;
-        _graphics.AnimateDefuse(); 
-    }
+        _triggerCol.enabled = false;
 
-    public void Disarm()
-    {
-        DisableEvent();
-    }
 
-    
+        //_graphics.AnimateDefuse(); 
+    }
 
 
 }

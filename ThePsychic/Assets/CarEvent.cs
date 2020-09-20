@@ -2,30 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarEvent : EventDefuser
+public class CarEvent : MonoBehaviour
 {
     [SerializeField] int _waitTime;
+    [SerializeField] PredictedEvent _predictedEvent;
+
+    private IEnumerator _waitForGreenLight;
+
+    private void Awake()
+    {
+        _waitForGreenLight = WaitForGreenLight();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            StartCoroutine(WaitForGreenLight());
+            StartCoroutine(_waitForGreenLight);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            StopCoroutine(WaitForGreenLight());
+            StopCoroutine(_waitForGreenLight);
         }
     }
 
     IEnumerator WaitForGreenLight()
     {
         yield return new WaitForSeconds(_waitTime);
-        Disarm();
+        _predictedEvent.DisableEvent();
     }
 
 
