@@ -25,7 +25,7 @@ public class EventGraphics : MonoBehaviour
 
     public void AnimateDefuse()
     {
-        _anim.SetTrigger("Disabled");
+        _anim.SetTrigger("Defused");
         _audio.PlayOneShot(_eventDefuse);
     }
 
