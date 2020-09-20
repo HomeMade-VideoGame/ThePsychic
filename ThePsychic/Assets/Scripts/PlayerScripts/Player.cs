@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     {
         if (_isDead)
         {
+            UIController.instance._deathScreen.SetActive(true);
             _theRb.velocity = new Vector2(0, 0);
         }
         if (_isDead == false && LevelManager.instance._isPaused == false && _theSr.isVisible)

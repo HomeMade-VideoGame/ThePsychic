@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -16,12 +17,13 @@ public class UIController : MonoBehaviour
     }
     #endregion
 
+    public GameObject _deathScreen;
     public Image _wrenchImage, _flowerImage, _umbrellaImage;
     public GameObject _inventory;
     public GameObject _pausedNotification;
     public float _waitToDisplayInventory;
     public float _waitToStopUmbrella;
-
+    public string _reloadScene, _mainMenuScene;
 
     public SpriteRenderer _umbrellaSr;
     public Animator _umbrellaAnim;
@@ -85,6 +87,19 @@ public class UIController : MonoBehaviour
     {
         _fadeToBlack = true;
         _fadeOutBlack = false;
+    }
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(_mainMenuScene);
+    }
+
+    public void ReloadScene()
+    {
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(_reloadScene);
     }
 
     public void UseWrench()
