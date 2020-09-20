@@ -333,6 +333,7 @@ PrefabInstance:
       objectReference: {fileID: -5272931583007890999, guid: 204e1160bd80b764cb5d31645df98c6b,
         type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 8367709344183393721, guid: 51422387a9992e249936c237e37537bb,
         type: 3}
       propertyPath: m_ChunkCullingBounds.x
@@ -343,6 +344,8 @@ PrefabInstance:
       propertyPath: m_ChunkCullingBounds.y
       value: 2.5
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
 =======
 >>>>>>> parent of b1a7031... Debut Colliders Environnement
     - target: {fileID: 8367709345092365513, guid: 51422387a9992e249936c237e37537bb,
@@ -670,6 +673,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
+=======
 >>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!1 &314930320
 GameObject:
@@ -808,6 +814,46 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
+=======
+--- !u!4 &374088989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374088988}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -532, y: -4, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children:
+  - {fileID: 1658976888}
+  - {fileID: 1614049381}
+  - {fileID: 344580132}
+  - {fileID: 190248548}
+  - {fileID: 1021045066}
+  - {fileID: 1085694809}
+  m_Father: {fileID: 1390865128}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &470306240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470306242}
+  - component: {fileID: 470306241}
+  m_Layer: 0
+  m_Name: Prediction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!212 &470306241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1068,6 +1114,7 @@ Transform:
   m_PrefabInstance: {fileID: 735948913}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &660105311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1202,6 +1249,8 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 612b638105e5cd54db7ad1641a44ffef, type: 3}
 =======
+=======
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!114 &618592084 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1732247312, guid: 6868ba7c1eda2e840bbd883fe6ec55f9,
@@ -2166,6 +2215,7 @@ Canvas:
   m_SortingOrder: 0
   m_TargetDisplay: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1844295378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2365,6 +2415,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
 =======
 >>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!1 &1890423353
@@ -2654,7 +2706,10 @@ MonoBehaviour:
   _theEnd: Victory
   _waitToLoad: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!68 &2074186934 stripped
 EdgeCollider2D:
   m_CorrespondingSourceObject: {fileID: 1451552308, guid: 6868ba7c1eda2e840bbd883fe6ec55f9,
@@ -2673,6 +2728,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8988dd9cfc4f80c4ea78707c246f1662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+>>>>>>> parent of b1a7031... Debut Colliders Environnement
+=======
 >>>>>>> parent of b1a7031... Debut Colliders Environnement
 --- !u!1001 &2102845265
 PrefabInstance:
