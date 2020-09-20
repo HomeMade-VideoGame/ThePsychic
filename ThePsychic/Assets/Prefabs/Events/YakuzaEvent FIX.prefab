@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 713705188979736736}
   - component: {fileID: 3895267877299313096}
   m_Layer: 0
-  m_Name: YakuzaEvent 1
+  m_Name: YakuzaEvent FIX
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _predictedEvent: {fileID: 0}
+  _animElec: {fileID: 0}
 --- !u!1 &3895267877374743553
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3895267878558943427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -678,6 +680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _predictedEvent: {fileID: 0}
+  _animElec: {fileID: 0}
 --- !u!1 &7679302004331135960
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +733,7 @@ MonoBehaviour:
   _eventSound: {fileID: 0}
   _eventDefuse: {fileID: 0}
   _eventTrigger: {fileID: 0}
+  _soundRadius: 0
 --- !u!95 &7640009617105469207
 Animator:
   serializedVersion: 3
