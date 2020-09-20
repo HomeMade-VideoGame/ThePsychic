@@ -166,8 +166,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.8457794, y: -0.6917734}
-  - {x: -0.80625916, y: 2.3443434}
+  - {x: 0.0061338544, y: -1.4758172}
+  - {x: 0.011573702, y: 2.4125216}
 --- !u!1 &5961191348424928464
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 4495348896912847831}
   - component: {fileID: 6631551807128061529}
   - component: {fileID: 7253344489607377802}
+  - component: {fileID: 1124470340}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -374,3 +375,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1124470340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6673376988072131222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76dbeb9e8e5e1048a0722bea3841dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventSound: {fileID: 0}
+  _eventDefuse: {fileID: 0}
+  _eventTrigger: {fileID: 0}

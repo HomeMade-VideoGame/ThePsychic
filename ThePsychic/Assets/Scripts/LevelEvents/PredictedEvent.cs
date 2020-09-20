@@ -37,6 +37,7 @@ public class PredictedEvent : MonoBehaviour
 
         if (isTriggered)
         {
+            Debug.Log(_graphics);
             _graphics.AnimateDeath();
         }
         //else if (isDisabled)
