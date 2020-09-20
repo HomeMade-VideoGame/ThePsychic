@@ -15,16 +15,16 @@ public class CameraManager : MonoBehaviour
     private void Awake()
     {
         _cam1.gameObject.SetActive(false);
-        _cam2.gameObject.SetActive(false);
+        _cam2.gameObject.SetActive(true);
         _cam2bis.gameObject.SetActive(false);
         _cam3.gameObject.SetActive(false);
-        _cam4.gameObject.SetActive(true);
+        _cam4.gameObject.SetActive(false);
     }
 
     private void Update()
     {
         StartCoroutine(CamSwapTime());
-        StartTravelling();
+        //StartTravelling();
     }
 
     public void StartTravelling()
