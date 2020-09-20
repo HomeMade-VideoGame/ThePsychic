@@ -1466,7 +1466,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 0.84
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1490,7 +1490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6000004, y: 0.7, z: -2}
+  m_LocalPosition: {x: -2.8, y: 1.95, z: -2}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1103857750}
@@ -2066,6 +2066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _predictedEvent: {fileID: 0}
+  _animElec: {fileID: 0}
 --- !u!4 &1137767601
 Transform:
   m_ObjectHideFlags: 0
@@ -3054,10 +3056,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 486106855}
     m_Modifications:
-    - target: {fileID: 2011010368, guid: 6868ba7c1eda2e840bbd883fe6ec55f9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4605302707138984425, guid: 6868ba7c1eda2e840bbd883fe6ec55f9,
         type: 3}
       propertyPath: m_LocalPosition.x

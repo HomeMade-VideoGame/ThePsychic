@@ -1742,9 +1742,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76dbeb9e8e5e1048a0722bea3841dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventSound: {fileID: 0}
-  _eventDefuse: {fileID: 0}
-  _eventTrigger: {fileID: 0}
+  _eventSound: {fileID: 8300000, guid: 0df1a2c295ae6b74f835736a3a4ce08c, type: 3}
+  _eventDefuse: {fileID: 8300000, guid: 5fc7642bb5a76a748a1743d7ac0f3411, type: 3}
+  _eventTrigger: {fileID: 8300000, guid: 81f03598240c6ed489b101fe16de760e, type: 3}
+  _soundRadius: 0
 --- !u!82 &7112113248095679842
 AudioSource:
   m_ObjectHideFlags: 0
