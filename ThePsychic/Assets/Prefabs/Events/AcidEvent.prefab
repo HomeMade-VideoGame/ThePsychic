@@ -183,7 +183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682576402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -868, y: 225, z: -36.301495}
+  m_LocalPosition: {x: -3795, y: 418, z: -36.301495}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 2096474876}
@@ -308,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709727688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -263, y: 244, z: 0}
+  m_LocalPosition: {x: -166, y: 173, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1928001865}
@@ -565,7 +565,7 @@ GameObject:
   m_Layer: 0
   m_Name: AcidEvent
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -617,8 +617,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: -183.17996, y: 269.82956}
+  - {x: -64.88064, y: 6.900286}
+  - {x: -70.51441, y: 168.62553}
 --- !u!1 &5961191348424928464
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _eventSound: {fileID: 0}
+  _eventDefuse: {fileID: 0}
+  _eventTrigger: {fileID: 0}
 --- !u!95 &6631551807128061529
 Animator:
   serializedVersion: 3
