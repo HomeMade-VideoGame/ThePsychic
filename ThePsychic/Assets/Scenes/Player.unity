@@ -1466,7 +1466,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 0.84
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1490,7 +1490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.8, y: 1.95, z: -2}
+  m_LocalPosition: {x: 4.6000004, y: 0.7, z: -2}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1103857750}
@@ -1510,6 +1510,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cam1: {fileID: 665335776}
   _cam2: {fileID: 1574398231}
+  _cam2bis: {fileID: 0}
+  _cam3: {fileID: 0}
+  _cam4: {fileID: 0}
   _mainCamera: {fileID: 519420031}
   _camSwapTime: 3
 --- !u!4 &539324444 stripped
@@ -1635,7 +1638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665335775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.848001, y: 0.38200003, z: -2}
+  m_LocalPosition: {x: 4.6000004, y: 0.7, z: -2}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 61767670}
@@ -1666,7 +1669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667674426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.24, y: 5.61, z: 0}
+  m_LocalPosition: {x: 34, y: 7.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 539324444}
@@ -3051,6 +3054,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 486106855}
     m_Modifications:
+    - target: {fileID: 2011010368, guid: 6868ba7c1eda2e840bbd883fe6ec55f9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4605302707138984425, guid: 6868ba7c1eda2e840bbd883fe6ec55f9,
         type: 3}
       propertyPath: m_LocalPosition.x
