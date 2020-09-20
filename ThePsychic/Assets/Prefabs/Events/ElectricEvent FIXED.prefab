@@ -65,13 +65,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.479
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 149
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -161,9 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76dbeb9e8e5e1048a0722bea3841dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventSound: {fileID: 0}
-  _eventDefuse: {fileID: 0}
-  _eventTrigger: {fileID: 0}
+  _eventSound: {fileID: 8300000, guid: fd96bc9d614a1d34c8cb0ffc0b27bf9e, type: 3}
+  _eventDefuse: {fileID: 8300000, guid: b1f8451c0bf55994e8dcf57457493898, type: 3}
+  _eventTrigger: {fileID: 8300000, guid: 1fbea865fd49db045bee746aa8026d29, type: 3}
+  _soundRadius: 0
 --- !u!1 &3321058889190591054
 GameObject:
   m_ObjectHideFlags: 0
