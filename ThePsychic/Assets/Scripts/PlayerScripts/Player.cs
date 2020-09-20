@@ -50,14 +50,14 @@ public class Player : MonoBehaviour
     {
         if (_isDead)
         {
-            UIController.instance._deathScreen.SetActive(true);
+            StartCoroutine(DeathScreen());
             _theRb.velocity = new Vector2(0, 0);
+
         }
         if (_isDead == false && LevelManager.instance._isPaused == false && _theSr.isVisible)
         {
             Movement();
         }
-
     }
 
     #endregion
@@ -108,7 +108,6 @@ public class Player : MonoBehaviour
         //}
 
         _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _moveInput.y * _defaultSpeed);
-
         // Crouch
         if (Input.GetButton("Crouch"))
         {
@@ -181,6 +180,13 @@ public class Player : MonoBehaviour
         _resetJump = true;
         yield return new WaitForSeconds(0.1f);
         _resetJump = false;
+    }
+
+    IEnumerator DeathScreen()
+    {
+        yield return new WaitForSeconds(4);
+        
+        UIController.instance._deathScreen.SetActive(true);
     }
 
     #endregion
