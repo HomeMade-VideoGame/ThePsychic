@@ -26,7 +26,7 @@ public class EventDefuser : PredictedEvent
         {
             if (UIController.instance._itemCode == _keyCode)
             {
-                Disarm();
+                DisableEvent();
             }
         }
         else return;
