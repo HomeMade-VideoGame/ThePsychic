@@ -53,6 +53,8 @@ public class UIController : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(_itemCode);
+
         if (_player._theSr.isVisible)
         {
             StartCoroutine(DisplayInventory());
