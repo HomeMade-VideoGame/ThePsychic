@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2098400694591849234}
   - component: {fileID: 2519295847335641520}
   m_Layer: 0
-  m_Name: FireHoseEvent 1
+  m_Name: FireHoseEvent
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098400694591849235}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13665, y: -191, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
@@ -200,7 +200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 362, y: 346}
+  m_AnchoredPosition: {x: 352, y: 243}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2519295846665498008
@@ -280,7 +280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -53.910675, y: -3.6700377}
+  m_AnchoredPosition: {x: -1.9, y: -0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2519295846735729312
@@ -770,6 +770,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ebca043567fcfe4489d6f75c2625b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _predictedEvent: {fileID: 0}
+  _animElec: {fileID: 0}
 --- !u!61 &2519295847335641527
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -783,7 +785,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6622266, y: 3.0290532}
+  m_Offset: {x: 0.82688427, y: 3.0290532}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -794,7 +796,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8509467, y: 2.2335958}
+  m_Size: {x: 4.5216312, y: 2.2335958}
   m_EdgeRadius: 0
 --- !u!1 &9109321047042375786
 GameObject:

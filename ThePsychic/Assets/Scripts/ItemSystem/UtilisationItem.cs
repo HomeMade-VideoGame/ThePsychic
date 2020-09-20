@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UtilisationItem : MonoBehaviour
 {
+    [SerializeField] PredictedEvent _predictedEvent;
+    [SerializeField] Animator _animElec;
 
     #region Private
 
@@ -12,6 +14,7 @@ public class UtilisationItem : MonoBehaviour
     private Player _player;
 
     private bool _canInterract = false;
+    private bool _canTurnOffElec;
 
 
     #endregion
@@ -34,6 +37,13 @@ public class UtilisationItem : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && _canTurnOffElec)
+        {
+            _animElec.SetTrigger("ElecOff");
+            _predictedEvent.DisableEvent();
+
+        }
     }
 
     #endregion
@@ -42,8 +52,15 @@ public class UtilisationItem : MonoBehaviour
     {
         if (other.CompareTag("Player") && _player._hasAnyItem)
         {
+            
             _notification.enabled = true;
             _canInterract = true;
+        }
+
+        if (other.CompareTag("Player"))
+        {
+            _notification.enabled = true;
+            _canTurnOffElec = true;
         }
     }
 
