@@ -17,7 +17,9 @@ public class UIController : MonoBehaviour
     #endregion
 
     public Image _wrenchImage, _flowerImage, _umbrellaImage;
+    public GameObject _inventory;
     public GameObject _pausedNotification;
+    public float _waitToDisplayInventory;
 
 
     #region Private
@@ -25,11 +27,60 @@ public class UIController : MonoBehaviour
     public bool _canClickButton = false;
     private Player _player;
 
+    public Image _fadeScreen;
+    public float _fadeSpeed;
+
     [HideInInspector]
     public int _itemCode = 0;
+    private bool _fadeToBlack, _fadeOutBlack;
 
     #endregion
 
+    #region Unity Lifecycle
+
+    private void Start()
+    {
+        _fadeOutBlack = true;
+        _fadeToBlack = false;
+    }
+
+    private void Update()
+    {
+        if (_player._theSr.isVisible)
+        {
+            StartCoroutine(DisplayInventory());
+        }
+
+        if (_fadeOutBlack)
+        {
+            _fadeScreen.color = new Color(_fadeScreen.color.r, _fadeScreen.color.g, _fadeScreen.color.b, Mathf.MoveTowards(_fadeScreen.color.a, 0f, _fadeSpeed * Time.deltaTime));
+
+            if (_fadeScreen.color.a == 0f)
+            {
+                _fadeOutBlack = false;
+            }
+        }
+
+        if (_fadeToBlack)
+        {
+            _fadeScreen.color = new Color(_fadeScreen.color.r, _fadeScreen.color.g, _fadeScreen.color.b, Mathf.MoveTowards(_fadeScreen.color.a, 1f, _fadeSpeed * Time.deltaTime));
+
+            if (_fadeScreen.color.a == 1f)
+            {
+                _fadeToBlack = false;
+            }
+        }
+    }
+
+    #endregion
+
+    #region Public methods
+
+    public void StartFadeToBlack()
+    {
+        _fadeToBlack = true;
+        _fadeOutBlack = false;
+    }
 
     public void UseWrench()
     {
@@ -65,4 +116,16 @@ public class UIController : MonoBehaviour
             LevelManager.instance._isPaused = false;
         }
     }
+
+    #endregion
+
+    #region Coroutine
+
+    public IEnumerator DisplayInventory()
+    {
+        yield return new WaitForSeconds(_waitToDisplayInventory);
+        _inventory.SetActive(true);
+    }
+
+    #endregion
 }
