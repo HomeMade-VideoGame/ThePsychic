@@ -31,6 +31,8 @@ public class UtilisationItem : MonoBehaviour
             UIController.instance._pausedNotification.SetActive(true);
             UIController.instance._canClickButton = true;
             LevelManager.instance._isPaused = true;
+
+            Destroy(gameObject);
         }
     }
 

@@ -20,6 +20,11 @@ public class UIController : MonoBehaviour
     public GameObject _inventory;
     public GameObject _pausedNotification;
     public float _waitToDisplayInventory;
+    public float _waitToStopUmbrella;
+
+
+    public SpriteRenderer _umbrellaSr;
+    public Animator _umbrellaAnim;
 
 
     #region Private
@@ -90,7 +95,8 @@ public class UIController : MonoBehaviour
             LevelManager.instance._isPaused = false;
             UIController.instance._wrenchImage.enabled = false;
             _itemCode = 1;
-
+            UIController.instance._pausedNotification.SetActive(false);
+            _player._hasWrench = false;
         }
     }
 
@@ -102,6 +108,8 @@ public class UIController : MonoBehaviour
             Debug.Log("used flower");
             UIController.instance._flowerImage.enabled = false;
             _itemCode = 2;
+            UIController.instance._pausedNotification.SetActive(false);
+            _player._hasFlower = false;
 
         }
     }
@@ -114,6 +122,12 @@ public class UIController : MonoBehaviour
             UIController.instance._umbrellaImage.enabled = false;
             _itemCode = 3;
             LevelManager.instance._isPaused = false;
+            _umbrellaSr.enabled = true;
+            _umbrellaAnim.SetTrigger("Deploy");
+            StartCoroutine(StopUmbrella());
+            UIController.instance._pausedNotification.SetActive(false);
+            _player._hasUmbrella = false;
+
         }
     }
 
@@ -125,6 +139,12 @@ public class UIController : MonoBehaviour
     {
         yield return new WaitForSeconds(_waitToDisplayInventory);
         _inventory.SetActive(true);
+    }
+
+    public IEnumerator StopUmbrella()
+    {
+        yield return new WaitForSeconds(_waitToStopUmbrella);
+        _umbrellaSr.enabled = false;
     }
 
     #endregion
