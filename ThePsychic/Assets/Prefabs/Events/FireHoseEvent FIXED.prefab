@@ -234,9 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76dbeb9e8e5e1048a0722bea3841dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _eventSound: {fileID: 0}
-  _eventDefuse: {fileID: 0}
-  _eventTrigger: {fileID: 0}
+  _eventSound: {fileID: 8300000, guid: 1404e73940e2d094ba53a0ae54f687c7, type: 3}
+  _eventDefuse: {fileID: 8300000, guid: e2b0e2c079e300b4ab89312fc2232938, type: 3}
+  _eventTrigger: {fileID: 8300000, guid: d3aa4f2ec00cfcc4685eb6d24dc6e898, type: 3}
+  _soundRadius: 0
 --- !u!1 &5818555335975974544
 GameObject:
   m_ObjectHideFlags: 0
