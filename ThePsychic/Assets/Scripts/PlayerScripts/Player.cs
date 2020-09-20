@@ -80,34 +80,32 @@ public class Player : MonoBehaviour
             Flip(false);
         }
         
-        //// Jump
-        //if (Input.GetKeyDown(KeyCode.Space)  && _grounded)
-        //{
-        //    _grounded = false;
-        //    _jumpYpos = _transform.position.y;
-        //    _theRb.velocity = new Vector2(_theRb.velocity.x, _jumpForce);
-        //    StartCoroutine(ResetJump());
+        // Jump
+        if (Input.GetKeyDown(KeyCode.Space)  && _grounded)
+        {
+            _grounded = false;
+            _jumpYpos = _transform.position.y;
+            _theRb.velocity = new Vector2(_theRb.velocity.x, _jumpForce);
+            StartCoroutine(ResetJump());
 
-        //    _isJumping = true;
-        //}
+            _isJumping = true;
+        }
 
-        //if (_resetJump == false && _transform.position.y <= _jumpYpos)
-        //{
-        //    _grounded = true;
-        //}
+        if (_resetJump == false && _transform.position.y <= _jumpYpos)
+        {
+            _grounded = true;
+        }
 
-        //if (_grounded == false)
-        //{
-        //    _theRb.gravityScale = 1;
-        //    _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _theRb.velocity.y);
-        //}
-        //else
-        //{
-        //    _theRb.gravityScale = 0;
-        //    _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _moveInput.y * _defaultSpeed);
-        //}
-
-        _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _moveInput.y * _defaultSpeed);
+        if (_grounded == false)
+        {
+            _theRb.gravityScale = 1;
+            _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _theRb.velocity.y);
+        }
+        else
+        {
+            _theRb.gravityScale = 0;
+            _theRb.velocity = new Vector2(_moveInput.x * _defaultSpeed, _moveInput.y * _defaultSpeed);
+        }
 
         // Crouch
         if (Input.GetButton("Crouch"))
