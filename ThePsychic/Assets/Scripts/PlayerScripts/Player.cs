@@ -48,6 +48,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (_isDead)
+        {
+            _theRb.velocity = new Vector2(0, 0);
+        }
         if (_isDead == false && LevelManager.instance._isPaused == false && _theSr.isVisible)
         {
             Movement();

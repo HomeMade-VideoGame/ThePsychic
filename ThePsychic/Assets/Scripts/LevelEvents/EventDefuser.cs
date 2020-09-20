@@ -31,9 +31,4 @@ public class EventDefuser : PredictedEvent
         }
         else return;
     }
-
-    public override void Disarm()
-    {
-        base.Disarm();
-    }
 }

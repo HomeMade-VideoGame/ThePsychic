@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PredictedEvent : MonoBehaviour
 {
-    [SerializeField] EventGraphics _anim;
 
     public Sprite _voyanteSprite;
-
+    private EdgeCollider2D _triggerCol;
     private bool isTriggered;
+    private bool isDisabled;
+    private EventGraphics _graphics;
 
     public Sprite VoyanteSprite()
 
@@ -18,32 +19,49 @@ public class PredictedEvent : MonoBehaviour
 
     private void Start()
     {
+        _graphics = GetComponentInChildren<EventGraphics>();
+        isDisabled = false;
+        _triggerCol = GetComponent<EdgeCollider2D>();
 
     }
 
     private void Update()
     {
+        Debug.Log(_triggerCol);
         if (isTriggered)
         {
-            //_anim.AnimateDeath();
+            _graphics.AnimateDeath();
         }
+        //else if (isDisabled)
+        //{
+        //    DisableEvent();
+        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            isTriggered = true;
-            Debug.Log("Triggered the event");
-            collision.gameObject.GetComponent<Player>().IsDead(true);
+            if (!isTriggered)
+            {
+                isTriggered = true;
+                Debug.Log("Triggered the event");
+                collision.gameObject.GetComponent<Player>().IsDead(true);
+            }
         }
     }
 
-    public virtual void Disarm()
+    private void DisableEvent()
     {
+        DestroyImmediate(_triggerCol);
         Debug.Log("Event disarmed");
         isTriggered = false;
-        //_anim.AnimateDefuse();
+        //_graphics.AnimateDefuse(); 
+    }
+
+    public void Disarm()
+    {
+        DisableEvent();
     }
 
     
