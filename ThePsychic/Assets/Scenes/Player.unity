@@ -27802,19 +27802,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6655280565350517729, guid: 5140b487a93a1034fa2da48183261ebb,
         type: 3}
-      propertyPath: _umbrellaAnim
-      value: 
-      objectReference: {fileID: 2118710869}
-    - target: {fileID: 6655280565350517729, guid: 5140b487a93a1034fa2da48183261ebb,
-        type: 3}
       propertyPath: _umbrellaSr
       value: 
       objectReference: {fileID: 2118710870}
     - target: {fileID: 6655280565350517729, guid: 5140b487a93a1034fa2da48183261ebb,
         type: 3}
-      propertyPath: _waitToStopUmbrella
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: _umbrellaAnim
+      value: 
+      objectReference: {fileID: 2118710869}
     - target: {fileID: 6655280565350517730, guid: 5140b487a93a1034fa2da48183261ebb,
         type: 3}
       propertyPath: m_LocalPosition.x
