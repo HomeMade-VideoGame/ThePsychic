@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 4605302707138984431, guid: a49be7a4e61bcb94992f2bfe571fb9f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a49be7a4e61bcb94992f2bfe571fb9f4, type: 3}
@@ -473,7 +473,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -493,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470306240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.031, y: -0.202, z: 0}
+  m_LocalPosition: {x: 0.0469, y: 0.5553, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1890423354}
@@ -682,6 +682,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cam1: {fileID: 665335776}
   _cam2: {fileID: 1574398231}
+  _cam3: {fileID: 0}
+  _cam4: {fileID: 0}
   _mainCamera: {fileID: 519420031}
   _camSwapTime: 3
 --- !u!4 &539324444 stripped
@@ -872,12 +874,12 @@ PrefabInstance:
     - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.15
+      value: -260.8
       objectReference: {fileID: 0}
     - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
         type: 3}
