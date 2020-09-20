@@ -16,19 +16,10 @@ public class EventGraphics : MonoBehaviour
         _audio = GetComponent<AudioSource>();
     }
 
-    private void Update()
-    {
-        hit = Physics2D.OverlapCircle(transform.position, _soundRadius, LayerMask.NameToLayer("Player"));
-        if (hit.CompareTag("Player"))
-        {
-            Debug.Log("Player in sound zone");
-            TriggerHintSound();
-        }
-    }
-
 
     private void TriggerHintSound()
     {
+        _audio.loop = true;
         _audio.clip = _eventSound; _audio.Play();
     }
 
