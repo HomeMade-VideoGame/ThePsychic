@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     #region Show in Inspector
 
-    [SerializeField] SpriteRenderer _theSr;
+    public SpriteRenderer _theSr;
 
     [SerializeField] float _moveSpeed;
     [SerializeField] private float _jumpForce = 5f;

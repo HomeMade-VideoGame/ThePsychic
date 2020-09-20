@@ -4,100 +4,100 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4848215693408104527
-    second: Fx
+    second: FX_A1
   - first:
       213: -3521549926140871309
-    second: TilesSheetFX_1
+    second: FX_A2
   - first:
       213: 8800699526852079961
-    second: TilesSheetFX_2
+    second: FX_A3
   - first:
       213: 5832325467791757662
-    second: TilesSheetFX_3
+    second: FX_A4
   - first:
       213: -2210010569664203583
-    second: TilesSheetFX_4
+    second: FX_A5
   - first:
       213: -5419029745726562035
-    second: TilesSheetFX_5
+    second: FX_A6
   - first:
       213: 5407229135960141947
-    second: TilesSheetFX_6
+    second: FX_A7
   - first:
       213: -4671371888725585857
-    second: TilesSheetFX_7
+    second: FX_A8
   - first:
       213: 1830301588341485217
-    second: TilesSheetFX_8
+    second: FX_A9
   - first:
       213: -4931750666302623375
-    second: TilesSheetFX_9
+    second: FX_A10
   - first:
       213: -1593591262306779886
-    second: TilesSheetFX_10
+    second: FX_A11
   - first:
       213: 4795185068615431594
-    second: TilesSheetFX_11
+    second: FX_A12
   - first:
       213: 8159602401385183744
-    second: TilesSheetFX_12
+    second: FX_A13
   - first:
       213: 2162762419486344490
-    second: TilesSheetFX_13
+    second: FX_A14
   - first:
       213: -2107204918560504116
-    second: TilesSheetFX_14
+    second: FX_A15
   - first:
       213: 669656428880311692
-    second: TilesSheetFX_15
+    second: FX_A16
   - first:
       213: -5272931583007890999
-    second: TilesSheetFX_16
+    second: FX_B1
   - first:
       213: -6684685368063194248
-    second: TilesSheetFX_17
+    second: FX_B2
   - first:
       213: 523893182125806399
-    second: TilesSheetFX_18
+    second: FX_B3
   - first:
       213: 4554835485773045152
-    second: TilesSheetFX_19
+    second: FX_B4
   - first:
       213: -5405641495754629841
-    second: TilesSheetFX_20
+    second: FX_B5
   - first:
       213: -6681130931212671654
-    second: TilesSheetFX_21
+    second: FX_B6
   - first:
       213: 4028057993103604946
-    second: TilesSheetFX_22
+    second: FX_B7
   - first:
       213: 5504948952080080056
-    second: TilesSheetFX_23
+    second: FX_B8
   - first:
       213: 5041448367831806403
-    second: TilesSheetFX_24
+    second: FX_B9
   - first:
       213: 7936602356673340840
-    second: TilesSheetFX_25
+    second: FX_B10
   - first:
       213: 1137282869095232911
-    second: TilesSheetFX_26
+    second: FX_B11
   - first:
       213: -905395986126062455
-    second: TilesSheetFX_27
+    second: FX_B12
   - first:
       213: -6663993662957515583
-    second: TilesSheetFX_28
+    second: FX_B13
   - first:
       213: -7198084396630567730
-    second: TilesSheetFX_29
+    second: FX_B14
   - first:
       213: -6856947008740160450
-    second: TilesSheetFX_30
+    second: FX_B15
   - first:
       213: 7712684835720706449
-    second: TilesSheetFX_31
+    second: FX_B16
   - first:
       213: -6091226880634653011
     second: TilesSheetFX_32
@@ -249,7 +249,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -287,35 +287,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fx
+      name: FX_A1
       rect:
         serializedVersion: 2
         x: 0
@@ -323,7 +299,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_1
+      name: FX_A2
       rect:
         serializedVersion: 2
         x: 96
@@ -344,7 +320,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_2
+      name: FX_A3
       rect:
         serializedVersion: 2
         x: 192
@@ -365,7 +341,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_3
+      name: FX_A4
       rect:
         serializedVersion: 2
         x: 288
@@ -386,7 +362,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_4
+      name: FX_A5
       rect:
         serializedVersion: 2
         x: 384
@@ -407,7 +383,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_5
+      name: FX_A6
       rect:
         serializedVersion: 2
         x: 480
@@ -428,7 +404,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_6
+      name: FX_A7
       rect:
         serializedVersion: 2
         x: 576
@@ -449,7 +425,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_7
+      name: FX_A8
       rect:
         serializedVersion: 2
-        x: 672
+        x: 671
         y: 96
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_8
+      name: FX_A9
       rect:
         serializedVersion: 2
         x: 768
@@ -491,7 +467,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_9
+      name: FX_A10
       rect:
         serializedVersion: 2
         x: 864
@@ -512,7 +488,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_10
+      name: FX_A11
       rect:
         serializedVersion: 2
         x: 960
@@ -533,7 +509,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_11
+      name: FX_A12
       rect:
         serializedVersion: 2
         x: 1056
@@ -554,7 +530,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_12
+      name: FX_A13
       rect:
         serializedVersion: 2
         x: 1152
@@ -575,7 +551,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -588,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_13
+      name: FX_A14
       rect:
         serializedVersion: 2
         x: 1248
@@ -596,7 +572,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -609,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_14
+      name: FX_A15
       rect:
         serializedVersion: 2
         x: 1344
@@ -617,7 +593,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -630,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_15
+      name: FX_A16
       rect:
         serializedVersion: 2
         x: 1440
@@ -638,7 +614,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -651,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_16
+      name: FX_B1
       rect:
         serializedVersion: 2
         x: 0
@@ -659,7 +635,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -672,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_17
+      name: FX_B2
       rect:
         serializedVersion: 2
         x: 96
@@ -680,7 +656,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_18
+      name: FX_B3
       rect:
         serializedVersion: 2
         x: 192
@@ -701,7 +677,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -714,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_19
+      name: FX_B4
       rect:
         serializedVersion: 2
         x: 288
@@ -722,7 +698,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -735,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_20
+      name: FX_B5
       rect:
         serializedVersion: 2
         x: 384
@@ -743,7 +719,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -756,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_21
+      name: FX_B6
       rect:
         serializedVersion: 2
         x: 480
@@ -764,7 +740,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -777,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_22
+      name: FX_B7
       rect:
         serializedVersion: 2
         x: 576
@@ -785,7 +761,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -798,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_23
+      name: FX_B8
       rect:
         serializedVersion: 2
         x: 672
@@ -806,7 +782,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -819,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_24
+      name: FX_B9
       rect:
         serializedVersion: 2
         x: 768
@@ -827,7 +803,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -840,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_25
+      name: FX_B10
       rect:
         serializedVersion: 2
         x: 864
@@ -848,7 +824,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -861,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_26
+      name: FX_B11
       rect:
         serializedVersion: 2
         x: 960
@@ -869,7 +845,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -882,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_27
+      name: FX_B12
       rect:
         serializedVersion: 2
         x: 1056
@@ -890,7 +866,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -903,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_28
+      name: FX_B13
       rect:
         serializedVersion: 2
         x: 1152
@@ -911,7 +887,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_29
+      name: FX_B14
       rect:
         serializedVersion: 2
         x: 1248
@@ -932,7 +908,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_30
+      name: FX_B15
       rect:
         serializedVersion: 2
         x: 1344
@@ -953,7 +929,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -966,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesSheetFX_31
+      name: FX_B16
       rect:
         serializedVersion: 2
         x: 1440
@@ -974,7 +950,7 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

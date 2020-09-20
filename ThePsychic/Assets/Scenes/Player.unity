@@ -26608,6 +26608,79 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2047318855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047318856}
+  - component: {fileID: 2047318858}
+  - component: {fileID: 2047318857}
+  m_Layer: 0
+  m_Name: LevelEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047318856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047318855}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.95, y: -8.58, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1085176104786206962}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2047318857
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047318855}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.8195915, y: -1.8195915}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.639183, y: 4.639183}
+  m_EdgeRadius: 0
+--- !u!114 &2047318858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047318855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de513d86cd33d7743b34f2e6b1da130e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 762686415}
+  _theEnd: Victory
+  _waitToLoad: 2
 --- !u!1001 &2102845265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26746,6 +26819,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b561af65c27df4408c9f496f4d06c46, type: 3}
+--- !u!4 &1085176104786206962 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1085176104566817390, guid: 3b561af65c27df4408c9f496f4d06c46,
+    type: 3}
+  m_PrefabInstance: {fileID: 1085176104786206961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4034382120430348781
 PrefabInstance:
   m_ObjectHideFlags: 0
