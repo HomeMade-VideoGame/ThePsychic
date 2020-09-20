@@ -45,7 +45,7 @@ public class CameraManager : MonoBehaviour
 
     IEnumerator CamSwapTime()
     {
-        yield return new WaitWhile(_randomEvent.IsReady);
+        yield return new WaitForSeconds(_camSwapTime);
         CameraSwap();
     }
 }

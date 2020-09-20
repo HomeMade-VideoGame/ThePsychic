@@ -70,16 +70,12 @@ public class RandomEvent : MonoBehaviour
 
     IEnumerator SelectedSpriteSwitch()
     {
-        while (!_isReady)
-        {
             foreach (PredictedEvent danger in _eventArray)
             {
                 _predictionSpriteRenderer.sprite = danger.VoyanteSprite();
 
                 yield return new WaitForSeconds(_spriteSwitchTime);
             }
-        }
-
         //    _predictionSpriteRenderer.gameObject.SetActive(false);
         //}
     }
