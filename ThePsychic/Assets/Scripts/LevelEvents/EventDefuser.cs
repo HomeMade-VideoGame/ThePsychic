@@ -33,6 +33,7 @@ public class EventDefuser : MonoBehaviour
         {
             if (UIController.instance._itemCode == _keyCode)
             {
+
                 _predictedEvent.DisableEvent();
             }
         }
