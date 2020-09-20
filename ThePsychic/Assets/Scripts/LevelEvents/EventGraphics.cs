@@ -5,17 +5,23 @@ using UnityEngine;
 public class EventGraphics : MonoBehaviour
 {
     [SerializeField] AudioClip _eventSound, _eventDefuse, _eventTrigger;
+    [SerializeField] float _soundRadius;
     private Animator _anim;
     private AudioSource _audio;
+    private Collider2D hit;
 
     public void Start()
     {
         _anim = GetComponent<Animator>();
         _audio = GetComponent<AudioSource>();
-        _audio.clip = _eventSound; _audio.Play();
     }
 
 
+    private void TriggerHintSound()
+    {
+        _audio.loop = true;
+        _audio.clip = _eventSound; _audio.Play();
+    }
 
     public void AnimateDeath()
     {
