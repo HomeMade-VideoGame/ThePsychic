@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
     #region Show in Inspector
 
-    [SerializeField] Player _player;
-    [SerializeField] float _interactRadius = 3f;
-
-    [SerializeField] GameObject _notification;
     [SerializeField] bool isWrench, isFlower, isUmbrella;
 
     #endregion
@@ -15,10 +12,23 @@ public class Interactable : MonoBehaviour
     #region Private
 
     private bool _canPickup = false;
+    private Player _player;
+    private Text _notification;
 
     #endregion
 
     #region Unity Lifecycle
+
+    private void Awake()
+    {
+        _player = FindObjectOfType<Player>();
+        _notification = GetComponentInChildren<Text>();
+    }
+
+    private void Start()
+    {
+        _notification.enabled = false;
+    }
 
     private void Update()
     {
@@ -58,7 +68,7 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _notification.SetActive(true);
+            _notification.enabled = true;
             _canPickup = true;
         }
     }
@@ -67,7 +77,7 @@ public class Interactable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            _notification.SetActive(false);
+            _notification.enabled = true;
             _canPickup = false;
         }
     }
