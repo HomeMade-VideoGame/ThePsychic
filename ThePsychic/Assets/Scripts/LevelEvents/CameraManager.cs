@@ -6,7 +6,7 @@ public class CameraManager : MonoBehaviour
 {
     [SerializeField] private CinemachineVirtualCamera _cam1;
     [SerializeField] private CinemachineVirtualCamera _cam2;
-
+    [SerializeField] private CinemachineVirtualCamera _cam2bis;
     [SerializeField] private CinemachineVirtualCamera _cam3;
     [SerializeField] private CinemachineVirtualCamera _cam4;
     [SerializeField] private Camera _mainCamera;
@@ -16,9 +16,9 @@ public class CameraManager : MonoBehaviour
     {
         _cam1.gameObject.SetActive(false);
         _cam2.gameObject.SetActive(true);
-
-        //_cam3.gameObject.SetActive(false);
-        //_cam4.gameObject.SetActive(false);
+        _cam2bis.gameObject.SetActive(false);
+        _cam3.gameObject.SetActive(false);
+        _cam4.gameObject.SetActive(false);
     }
 
     private void Update()
