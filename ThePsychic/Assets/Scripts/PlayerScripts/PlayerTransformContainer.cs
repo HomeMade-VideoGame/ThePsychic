@@ -6,8 +6,14 @@ public class PlayerTransformContainer : MonoBehaviour
 
     private Transform _playerTransform;
 
+    private void Awake()
+    {
+        _playerTransform = GetComponent<Transform>();
+    }
+
     private void Update()
     {
+
         if (_playerTransformContainer != null)
         {
             _playerTransformContainer.value = _playerTransform;

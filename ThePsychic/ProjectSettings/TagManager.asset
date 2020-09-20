@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - People
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Event
+    uniqueID: 1522950839
+    locked: 0
+  - name: Player
+    uniqueID: 684113447
+    locked: 0
+  - name: ForeGround
+    uniqueID: 382471969
     locked: 0

@@ -4,46 +4,66 @@ using UnityEngine;
 
 public class PredictedEvent : MonoBehaviour
 {
-    [SerializeField] EventScriptableObject _event;
-    [SerializeField] TransformData _playerPos;
 
-    private SpriteRenderer _sprite;
-    private Rigidbody2D _rigidbody;
-    private bool isActive;
+    public Sprite _voyanteSprite;
+    private EdgeCollider2D _triggerCol;
+    private bool isTriggered;
+    private bool isDisabled;
+    private EventGraphics _graphics;
+    private bool _canBeTriggered;
 
+    public Sprite VoyanteSprite()
+
+    {
+        return _voyanteSprite;
+    }
+
+    private void Awake()
+    {
+        _canBeTriggered = true;
+    }
     private void Start()
     {
-        transform.position = _playerPos.value.position + _event.minPos;
-        _sprite.sprite = _event.eventSprite;
+        _graphics = GetComponentInChildren<EventGraphics>();
+        isDisabled = false;
+        _triggerCol = GetComponent<EdgeCollider2D>();
+
     }
 
-    //Start event from Event Manager
-    public void StartEvent()
+    private void Update()
     {
-        isActive = true;
-    }
+        Debug.Log("can be triggered = " + _canBeTriggered);
+        Debug.Log("is triggered = " + isTriggered);
 
-    private void FixedUpdate()
-    {
-        if (isActive)
+        if (isTriggered)
         {
-            Movement();
+            _graphics.AnimateDeath();
         }
+        //else if (isDisabled)
+        //{
+        //    DisableEvent();
+        //}
     }
 
-    //Move the event
-    private void Movement()
-    {
-        _rigidbody.MovePosition((_playerPos.value.position + _event.maxPos)* _event.speed* Time.fixedDeltaTime);
-    }
-
-    //Kill the player on touch
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.GetComponent<Death>()
+            if (!isTriggered && _canBeTriggered == true)
+            {
+                Debug.Log("Triggered the event");
+                isTriggered = true;
+                collision.gameObject.GetComponent<Player>().IsDead(true);
+            }
         }
+    }
+
+    public void DisableEvent()
+    {
+        _canBeTriggered = false;
+        Debug.Log("Event disarmed");
+        _triggerCol.enabled = false;
+        _graphics.AnimateDefuse(); 
     }
 
 

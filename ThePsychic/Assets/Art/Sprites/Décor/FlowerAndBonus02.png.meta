@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: d18601fd33dbbe6428c29ee4a7697ff7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6382567444140341782
+    second: FlowerAndBonus02_0
+  - first:
+      213: -3618722502351366329
+    second: FlowerAndBonus02_1
+  - first:
+      213: 8015049995950685077
+    second: FlowerAndBonus02_2
+  - first:
+      213: 2371930126206047815
+    second: FlowerAndBonus02_3
+  - first:
+      213: 2110402693317817723
+    second: FlowerAndBonus02_4
+  - first:
+      213: -529850000284991849
+    second: FlowerAndBonus02_5
+  - first:
+      213: 2421618754854586797
+    second: FlowerAndBonus02_6
+  - first:
+      213: -2233415672754012322
+    second: FlowerAndBonus02_7
+  - first:
+      213: -672874527791057914
+    second: FlowerAndBonus02_8
+  - first:
+      213: 8210409516590122025
+    second: FlowerAndBonus02_9
+  - first:
+      213: 63199596477822713
+    second: FlowerAndBonus02_10
+  - first:
+      213: -2361232152057445814
+    second: FlowerAndBonus02_11
+  - first:
+      213: 2027345168965095509
+    second: FlowerAndBonus02_12
+  - first:
+      213: 215643037754739168
+    second: FlowerAndBonus02_13
+  - first:
+      213: 916264470366762460
+    second: FlowerAndBonus02_14
+  - first:
+      213: 2414323741844326390
+    second: FlowerAndBonus02_15
+  - first:
+      213: 3612696712854136053
+    second: FlowerAndBonus02_16
+  - first:
+      213: -4162264399381605020
+    second: FlowerAndBonus02_17
+  - first:
+      213: -7840019671819897732
+    second: FlowerAndBonus02_18
+  - first:
+      213: -3272707515823977545
+    second: FlowerAndBonus02_19
+  - first:
+      213: 5196645672594175697
+    second: FlowerAndBonus02_20
+  - first:
+      213: -8396096185608760376
+    second: FlowerAndBonus02_21
+  - first:
+      213: -5705798849701202945
+    second: FlowerAndBonus02_22
+  - first:
+      213: 1034123683816627881
+    second: FlowerAndBonus02_23
+  - first:
+      213: -8144320622775896701
+    second: FlowerAndBonus02_24
+  - first:
+      213: -2626589612889181878
+    second: FlowerAndBonus02_25
+  - first:
+      213: -3629633202108018309
+    second: FlowerAndBonus02_26
+  - first:
+      213: -5722252123889693967
+    second: FlowerAndBonus02_27
+  - first:
+      213: -6757098506136195013
+    second: FlowerAndBonus02_28
+  - first:
+      213: -4415103460753871069
+    second: FlowerAndBonus02_0
+  - first:
+      213: -8890505354117472002
+    second: FlowerAndBonus02_1
+  - first:
+      213: 6328121502827226704
+    second: FlowerAndBonus02_2
+  - first:
+      213: 3987070077653993728
+    second: FlowerAndBonus02_3
+  - first:
+      213: -3340392564725151460
+    second: FlowerAndBonus02_4
+  - first:
+      213: 6634901527579579531
+    second: FlowerAndBonus02_5
+  - first:
+      213: 7250848157385095395
+    second: FlowerAndBonus02_6
+  - first:
+      213: -3702500853178051270
+    second: FlowerAndBonus02_7
+  - first:
+      213: 5108308283981098073
+    second: FlowerAndBonus02_8
+  - first:
+      213: 3322138619829524793
+    second: FlowerAndBonus02_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlowerAndBonus02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fea2f6bc66ab2c0800000000000000
+      internalID: -4415103460753871069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0ae1efb749e9480800000000000000
+      internalID: -8890505354117472002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056278f9af002d750800000000000000
+      internalID: 6328121502827226704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009c7297c1be45730800000000000000
+      internalID: 3987070077653993728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19833919aa84a1d0800000000000000
+      internalID: -3340392564725151460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84d31f39c7e31c50800000000000000
+      internalID: 6634901527579579531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8fb358bff20a460800000000000000
+      internalID: 7250848157385095395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35ddb937131e9cc0800000000000000
+      internalID: -3702500853178051270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ce0edb15b54e640800000000000000
+      internalID: 5108308283981098073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerAndBonus02_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9399b89297b9a1e20800000000000000
+      internalID: 3322138619829524793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
