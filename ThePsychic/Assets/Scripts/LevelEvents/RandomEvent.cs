@@ -11,47 +11,60 @@ public class RandomEvent : MonoBehaviour
 
     private Sprite[] _selectedSpriteArray = new Sprite[3];
 
-    private bool _isReady;
+    public bool _isReady;
 
-
-    private void SelectEvent()
+    public bool IsReady()
     {
-        int j = 0;
-
-        for (int i = 0; i<=2; i++)
-        {
-            int x = Random.Range(0, _eventArray.Length);
-
-            if (_eventArray[x] != null)
-            {
-                _selectedEventArray[j] = _eventArray[x];
-
-                j++;
-                _eventArray[x] = null;
-            }
-
-            else
-            {
-                i--;
-            }
-        }
+        return _isReady;
     }
 
-    private void SetSelectedEvent()
+    private void Start()
     {
-         for (int z = 0; z <= _selectedEventArray.Length - 1; z++)
-         {
-             _selectedSpriteArray[z] = _selectedEventArray[z].VoyanteSprite();
-         }
+        StartCoroutine(SelectedSpriteSwitch());
     }
+
+    //private void SelectEvent()
+    //{
+    //    int j = 0;
+
+    //    for (int i = 0; i<=2; i++)
+    //    {
+    //        int x = Random.Range(0, _eventArray.Length);
+
+    //        if (_eventArray[x] != null)
+    //        {
+    //            _selectedEventArray[j] = _eventArray[x];
+
+    //            j++;
+    //            _eventArray[x] = null;
+    //        }
+
+    //        else
+    //        {
+    //            i--;
+    //        }
+    //    }
+    //}
+
+    //private void SetSelectedEvent()
+    //{
+    //     for (int z = 0; z <= _selectedEventArray.Length - 1; z++)
+    //     {
+    //         _selectedSpriteArray[z] = _selectedEventArray[z].VoyanteSprite();
+    //     }
+    //}
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (!_isReady)
         {
-            SelectEvent();
-            SetSelectedEvent();
-            StartCoroutine(SelectedSpriteSwitch());
+            //for (int t = 0; t <= _eventArray.Length - 1; t++)
+            //{
+            //    _predictionSpriteRenderer.sprite = _eventArray[t].VoyanteSprite();
+            //}
+            //SelectEvent();
+            //SetSelectedEvent();
+            //StartCoroutine(SelectedSpriteSwitch());
         }
     }
 
@@ -59,19 +72,15 @@ public class RandomEvent : MonoBehaviour
     {
         while (!_isReady)
         {
-            foreach (Sprite danger in _selectedSpriteArray)
+            foreach (PredictedEvent danger in _eventArray)
             {
-                _predictionSpriteRenderer.sprite = danger;
+                _predictionSpriteRenderer.sprite = danger.VoyanteSprite();
 
                 yield return new WaitForSeconds(_spriteSwitchTime);
             }
         }
 
-        _predictionSpriteRenderer.gameObject.SetActive(false);
-    }
-
-    private void SpawnEvent()
-    {
-
+        //    _predictionSpriteRenderer.gameObject.SetActive(false);
+        //}
     }
 }

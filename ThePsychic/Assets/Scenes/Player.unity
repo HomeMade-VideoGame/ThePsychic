@@ -1628,7 +1628,8 @@ MonoBehaviour:
   _cam3: {fileID: 401003617}
   _cam4: {fileID: 1121942558}
   _mainCamera: {fileID: 519420031}
-  _camSwapTime: 3
+  _camSwapTime: 5
+  _randomEvent: {fileID: 1983787289}
 --- !u!4 &539324444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8513148839428547624, guid: 8c1d5400ae1f9604b8d04be42c7f623a,
@@ -2410,6 +2411,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1365891813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8022875943705520600, guid: e9af82b1d9b60c0449904b6d14797d76,
+    type: 3}
+  m_PrefabInstance: {fileID: 460466295}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8988dd9cfc4f80c4ea78707c246f1662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1371891564 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6655280565350517730, guid: 5140b487a93a1034fa2da48183261ebb,
@@ -3173,11 +3186,12 @@ MonoBehaviour:
   - {fileID: 4605302707138984430, guid: 71f2fd55bc29f4e46b69fedb89c82844, type: 3}
   - {fileID: 4605302707138984430, guid: 6868ba7c1eda2e840bbd883fe6ec55f9, type: 3}
   - {fileID: 4605302707138984430, guid: 86d4a1f390e32044080004bee09dfb29, type: 3}
-  - {fileID: 4605302707138984430, guid: 612b638105e5cd54db7ad1641a44ffef, type: 3}
+  - {fileID: 1365891813}
   - {fileID: 4605302707138984430, guid: a49be7a4e61bcb94992f2bfe571fb9f4, type: 3}
   - {fileID: 4605302707138984430, guid: e30868f43d4b0574ca18dc0c035be6dc, type: 3}
   _predictionSpriteRenderer: {fileID: 470306241}
   _spriteSwitchTime: 2
+  _isReady: 0
 --- !u!4 &1983787290
 Transform:
   m_ObjectHideFlags: 0

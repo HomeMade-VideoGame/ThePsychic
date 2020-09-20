@@ -11,6 +11,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera _cam4;
     [SerializeField] private Camera _mainCamera;
     [SerializeField] private float _camSwapTime;
+    [SerializeField] private RandomEvent _randomEvent;
 
     private void Awake()
     {
@@ -50,7 +51,7 @@ public class CameraManager : MonoBehaviour
 
     IEnumerator CamSwapTime()
     {
-        yield return new WaitForSeconds(_camSwapTime);
+        yield return new WaitWhile(_randomEvent.IsReady);
         CameraSwap();
     }
 }
