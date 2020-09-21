@@ -8,11 +8,11 @@ public class PlayerTransformReceiver : MonoBehaviour
 
     private void Awake()
     {
-        _thisTransform = transform;
+        _thisTransform = GetComponent<Transform>();
     }
 
     private void Update()
     {
-        _thisTransform = _playerTransformData.value;
+        _thisTransform.position = _playerTransformData.value.position;
     }
 }
