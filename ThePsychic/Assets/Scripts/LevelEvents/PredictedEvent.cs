@@ -8,7 +8,6 @@ public class PredictedEvent : MonoBehaviour
     public Sprite _voyanteSprite;
     private EdgeCollider2D _triggerCol;
     private bool isTriggered;
-    //private bool isDisabled;
     private EventGraphics _graphics;
     private bool _canBeTriggered;
 
@@ -25,25 +24,18 @@ public class PredictedEvent : MonoBehaviour
     private void Start()
     {
         _graphics = GetComponentInChildren<EventGraphics>();
-        //isDisabled = false;
         _triggerCol = GetComponent<EdgeCollider2D>();
 
     }
 
     private void Update()
     {
-        Debug.Log("can be triggered = " + _canBeTriggered);
-        Debug.Log("is triggered = " + isTriggered);
-
         if (isTriggered)
         {
-            Debug.Log(_graphics);
             _graphics.AnimateDeath();
+            isTriggered = false;
         }
-        //else if (isDisabled)
-        //{
-        //    DisableEvent();
-        //}
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
